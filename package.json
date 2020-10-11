@@ -1,0 +1,11 @@
+{
+  "name": "ocds_helper",
+  "version": "1.0.0",
+  "description": "read ocds files and get stats, values and some practical functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "boris@gobiernofacil.com",
+  "license": "CC-BY-4.0"
+}
