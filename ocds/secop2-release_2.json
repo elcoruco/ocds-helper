@@ -1,0 +1,189 @@
+{
+    "ocid" : "ocds-k50g02-17-12-6930798",
+    "id" : "17-12-6930798",
+    "date" : "2017-08-11T10:11:26.000Z",
+    "tag" : [ 
+        "contract"
+    ],
+    "initiationType" : "tender",
+    "parties" : [ 
+        {
+            "name" : "CUNDINAMARCA - ALCALDÍA MUNICIPIO DE FACATATIVÁ",
+            "id" : "890907106",
+            "identifier" : {
+                "scheme" : "CO-RUE",
+                "id" : "890907106",
+                "legalName" : "CUNDINAMARCA - ALCALDÍA MUNICIPIO DE FACATATIVÁ"
+            },
+            "address" : {
+                "locality" : "Facatativá",
+                "region" : "Cundinamarca",
+                "countryName" : "COLOMBIA"
+            },
+            "contactPoint" : {
+                "name" : "IVAN DARIO GOMEZ AMAYA",
+                "email" : "idgamaya@gmail.com",
+                "telephone" : "3138137519"
+            },
+            "details" : {
+                "level" : "TERRITORIAL",
+                "order" : "TERRITORIAL DISTRITAL MUNICIPAL NIVEL 3"
+            },
+            "roles" : [ 
+                "procuringEntity", 
+                "buyer", 
+                "payer"
+            ]
+        }, 
+        {
+            "name" : "LUIS GUILLERMO SIERRA GARNICA",
+            "id" : "1070977172",
+            "identifier" : {
+                "scheme" : "COL-IDCARD",
+                "id" : "1070977172",
+                "legalName" : "LUIS GUILLERMO SIERRA GARNICA"
+            },
+            "address" : {
+                "streetAddress" : "CLL 8 NO. 17-34",
+                "locality" : "Cundinamarca",
+                "region" : " Colombia",
+                "countryName" : "COLOMBIA"
+            },
+            "contactPoint" : {
+                "name" : "LUIS GUILLERMO SIERRA GARNICA"
+            },
+            "additionalContactPoint" : {
+                "identifier" : {
+                    "scheme" : "COL-IDCARD",
+                    "id" : "1070977172",
+                    "legalName" : "LUIS GUILLERMO SIERRA GARNICA"
+                }
+            },
+            "roles" : [ 
+                "supplier", 
+                "payee"
+            ]
+        }
+    ],
+    "buyer" : {
+        "id" : "890907106",
+        "name" : "CUNDINAMARCA - ALCALDÍA MUNICIPIO DE FACATATIVÁ"
+    },
+    "planning" : {
+        "rationale" : "CONTRATAR LOS SERVICIOS DE UNA PERSONA NATURAL PARA REALIZAR LABORES DE APOYO EN LOS TRAMITES OPERATIVOS RELACIONADOS CON EL PROCEDIMIENTO Y MEJORAMIENTO DE LOS IMPUESTOS DESARROLLADOS POR LA SECRETARIA DE HACIENDA DEL MUNICIPIO DE FACATATIVA\r\n",
+        "budget" : {
+            "id" : "2017001313",
+            "description" : "CDP",
+            "amount" : {
+                "amount" : 7260000.0,
+                "currency" : "COP"
+            },
+            "projectID" : "0"
+        },
+        "milestones" : [ 
+            {
+                "dueDate" : "2017-07-26T06:00:00.000Z",
+                "id" : 1,
+                "title" : "Apertura",
+                "type" : "preProcurement",
+                "status" : "scheduled"
+            }
+        ]
+    },
+    "tender" : {
+        "id" : "17-12-6930798",
+        "title" : "DI-456-17",
+        "description" : "CONTRATAR LOS SERVICIOS DE UNA PERSONA NATURAL PARA REALIZAR LABORES DE APOYO EN LOS TRAMITES OPERATIVOS RELACIONADOS CON EL PROCEDIMIENTO Y MEJORAMIENTO DE LOS IMPUESTOS DESARROLLADOS POR LA SECRETARIA DE HACIENDA DEL MUNICIPIO DE FACATATIVA\r\n",
+        "status" : "complete",
+        "procuringEntity" : {
+            "id" : "890907106",
+            "name" : "CUNDINAMARCA - ALCALDÍA MUNICIPIO DE FACATATIVÁ"
+        },
+        "items" : [ 
+            {
+                "id" : "841117",
+                "description" : "Finanzas corporativas",
+                "classification" : {
+                    "scheme" : "UNSPSC",
+                    "id" : "841117",
+                    "description" : "Finanzas corporativas",
+                    "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                },
+                "additionalClassifications" : [ 
+                    {
+                        "scheme" : "UNSPSC",
+                        "id" : "8411",
+                        "description" : "Servicios de contabilidad y auditorias",
+                        "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                    }
+                ]
+            }
+        ],
+        "value" : {
+            "amount" : 6251666.0,
+            "currency" : "COP"
+        },
+        "procurementMethod" : "limited",
+        "procurementMethodDetails" : "Contratación Directa (Ley 1150 de 2007)",
+        "procurementMethodDetailsRationale" : "Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H)",
+        "submissionMethod" : [ 
+            "inPerson"
+        ],
+        "submissionMethodDetails" : "Municipio obtención: Facatativá Municipio entrega: Facatativá Municipio ejecución: Cundinamarca - Facatativá Lugar aclaraciones: No definido",
+        "expressionAddress" : {
+            "countryName" : "Colombia"
+        },
+        "tenderPeriod" : {
+            "startDate" : "2017-07-26T06:00:00.000Z"
+        },
+        "milestones" : [ 
+            {
+                "dueDate" : "2017-07-26T06:00:00.000Z",
+                "id" : 1,
+                "title" : "Apertura",
+                "type" : "preProcurement",
+                "status" : "scheduled"
+            }
+        ],
+        "coveredBy" : [ 
+            "x_Estatuto_General_de_Contratación"
+        ]
+    },
+    "contracts" : [ 
+        {
+            "id" : 6301426,
+            "awardID" : 6301426,
+            "title" : "DI-456-17",
+            "description" : "CONTRATAR LOS SERVICIOS DE UNA PERSONA NATURAL PARA REALIZAR LABORES DE APOYO EN LOS TRAMITES OPERATIVOS RELACIONADOS CON EL PROCEDIMIENTO Y MEJORAMIENTO DE LOS IMPUESTOS DESARROLLADOS POR LA SECRETARIA DE HACIENDA DEL MUNICIPIO DE FACATATIVA",
+            "period" : {
+                "startDate" : "2017-07-26T00:00:00.000Z",
+                "durationInDays" : 155
+            },
+            "value" : {
+                "amount" : 6251666.0,
+                "currency" : "COP"
+            },
+            "items" : [ 
+                {
+                    "id" : "841117",
+                    "description" : "Finanzas corporativas",
+                    "classification" : {
+                        "scheme" : "UNSPSC",
+                        "id" : "841117",
+                        "description" : "Finanzas corporativas",
+                        "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                    },
+                    "additionalClassifications" : [ 
+                        {
+                            "scheme" : "UNSPSC",
+                            "id" : "8411",
+                            "description" : "Servicios de contabilidad y auditorias",
+                            "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                        }
+                    ]
+                }
+            ],
+            "dateSigned" : "2017-07-26T00:00:00.000Z"
+        }
+    ]
+}

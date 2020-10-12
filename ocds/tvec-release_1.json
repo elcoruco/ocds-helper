@@ -1,0 +1,157 @@
+{
+    "ocid" : "ocds-k50g02-23117",
+    "id" : "23117",
+    "date" : "2017-12-05T00:00:00.000Z",
+    "tag" : [ 
+        "contract"
+    ],
+    "initiationType" : "tender",
+    "parties" : [ 
+        {
+            "name" : "DEPARTAMENTO ADMINISTRATIVO DE LA FUNCION PUBLICA",
+            "id" : "CO-RUE899999020",
+            "identifier" : {
+                "scheme" : "CO-RUE",
+                "id" : "899999020",
+                "legalName" : "DEPARTAMENTO ADMINISTRATIVO DE LA FUNCION PUBLICA"
+            },
+            "address" : {
+                "locality" : "Bogotá, D.C.",
+                "region" : "Bogotá, D.C.",
+                "countryName" : "COLOMBIA"
+            },
+            "details" : {
+                "obligada" : "Si",
+                "order" : "Nacional",
+                "branch" : "Ejecutiva",
+                "sector" : "Función Pública"
+            },
+            "roles" : [ 
+                "procuringEntity", 
+                "buyer", 
+                "payer"
+            ]
+        }, 
+        {
+            "name" : "MAKRO SUPERMAYORISTA S.A.S",
+            "id" : "1",
+            "identifier" : {
+                "id" : "1",
+                "legalName" : "MAKRO SUPERMAYORISTA S.A.S"
+            },
+            "address" : {
+                "locality" : "Bogotá, D.C.",
+                "region" : "Bogotá, D.C.",
+                "countryName" : "COLOMBIA"
+            },
+            "details" : {
+                "obligada" : "Si",
+                "order" : "Nacional",
+                "branch" : "Ejecutiva",
+                "sector" : "Función Pública"
+            },
+            "roles" : [ 
+                "supplier", 
+                "payee"
+            ]
+        }
+    ],
+    "buyer" : {
+        "id" : "CO-RUE899999020",
+        "name" : "DEPARTAMENTO ADMINISTRATIVO DE LA FUNCION PUBLICA"
+    },
+    "planning" : {
+        "rationale" : "Grandes Superficies",
+        "budget" : {
+            "amount" : {
+                "currency" : "COP"
+            }
+        }
+    },
+    "tender" : {
+        "id" : "39988",
+        "title" : "Grandes Superficies",
+        "status" : "complete",
+        "procuringEntity" : {
+            "id" : "899999020",
+            "name" : "Doris Atahualpa Polanco"
+        },
+        "items" : [ 
+            {
+                "id" : 1,
+                "description" : "HORNO MICROONDAS INDUSTRIAL 0.8 PC NE-1054FAPH GRIS PANASONIC",
+                "quantity" : 4,
+                "unit" : {
+                    "name" : "Unidad"
+                }
+            }
+        ],
+        "value" : {
+            "currency" : "COP"
+        },
+        "procurementMethod" : "selective",
+        "awardCriteria" : "priceOnly",
+        "submissionMethod" : [ 
+            "electronicSubmission"
+        ],
+        "submissionMethodDetails" : "Bogotá D.C.",
+        "numberOfTenderers" : 0
+    },
+    "awards" : [ 
+        {
+            "id" : "23117",
+            "title" : "Grandes Superficies",
+            "description" : "Grandes Superficies",
+            "status" : "active",
+            "date" : "2017-12-05T00:00:00.000Z",
+            "value" : {
+                "amount" : 7000000,
+                "currency" : "COP"
+            },
+            "suppliers" : [ 
+                {
+                    "id" : 1,
+                    "name" : "MAKRO SUPERMAYORISTA S.A.S"
+                }
+            ],
+            "items" : [ 
+                {
+                    "id" : 1,
+                    "description" : "HORNO MICROONDAS INDUSTRIAL 0.8 PC NE-1054FAPH GRIS PANASONIC",
+                    "quantity" : 4,
+                    "unit" : {
+                        "name" : "Unidad"
+                    }
+                }
+            ]
+        }
+    ],
+    "contracts" : [ 
+        {
+            "id" : "23117",
+            "awardID" : "23117",
+            "title" : "Grandes Superficies",
+            "description" : "Grandes Superficies",
+            "status" : "active",
+            "period" : {
+                "startDate" : "2017-12-05T00:00:00.000Z",
+                "endDate" : "2017-12-22T00:00:00.000Z"
+            },
+            "value" : {
+                "amount" : 7000000,
+                "currency" : "COP"
+            },
+            "items" : [ 
+                {
+                    "id" : 1,
+                    "description" : "HORNO MICROONDAS INDUSTRIAL 0.8 PC NE-1054FAPH GRIS PANASONIC",
+                    "quantity" : 4,
+                    "unit" : {
+                        "name" : "Unidad"
+                    }
+                }
+            ],
+            "dateSigned" : "2017-12-05T00:00:00.000Z"
+        }
+    ]
+}

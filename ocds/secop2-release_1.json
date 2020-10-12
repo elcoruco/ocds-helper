@@ -1,0 +1,189 @@
+{
+    "ocid" : "ocds-k50g02-19-12-8875567",
+    "id" : "19-12-8875567",
+    "date" : "2019-01-17T08:29:22.000Z",
+    "tag" : [ 
+        "contract"
+    ],
+    "initiationType" : "tender",
+    "parties" : [ 
+        {
+            "name" : "NARIÑO - ALCALDÍA MUNICIPIO DE GUAITARILLA",
+            "id" : "899999701",
+            "identifier" : {
+                "scheme" : "CO-RUE",
+                "id" : "899999701",
+                "legalName" : "NARIÑO - ALCALDÍA MUNICIPIO DE GUAITARILLA"
+            },
+            "address" : {
+                "locality" : "Guaitarilla",
+                "region" : "Nariño",
+                "countryName" : "COLOMBIA"
+            },
+            "contactPoint" : {
+                "name" : "JAIRO ANTONIO ROMO PORTILLA",
+                "email" : "romojairo@gmail.com",
+                "telephone" : "(2) 7433272"
+            },
+            "details" : {
+                "level" : "TERRITORIAL",
+                "order" : "TERRITORIAL DISTRITAL MUNICIPAL NIVEL 6"
+            },
+            "roles" : [ 
+                "procuringEntity", 
+                "buyer", 
+                "payer"
+            ]
+        }, 
+        {
+            "name" : "RUBEN LIBARDO MENESES SOLARTE",
+            "id" : "1089846717",
+            "identifier" : {
+                "scheme" : "COL-IDCARD",
+                "id" : "1089846717",
+                "legalName" : "RUBEN LIBARDO MENESES SOLARTE"
+            },
+            "address" : {
+                "streetAddress" : "BARRIO SAN FRANCISCO",
+                "locality" : "Nariño",
+                "region" : " Colombia",
+                "countryName" : "COLOMBIA"
+            },
+            "contactPoint" : {
+                "name" : "RUBEN LIBARDO MENESES SOLARTE"
+            },
+            "additionalContactPoint" : {
+                "identifier" : {
+                    "scheme" : "COL-IDCARD",
+                    "id" : "1089846717",
+                    "legalName" : "RUBEN LIBARDO MENESES SOLARTE"
+                }
+            },
+            "roles" : [ 
+                "supplier", 
+                "payee"
+            ]
+        }
+    ],
+    "buyer" : {
+        "id" : "899999701",
+        "name" : "NARIÑO - ALCALDÍA MUNICIPIO DE GUAITARILLA"
+    },
+    "planning" : {
+        "rationale" : "SERVICIO DE APOYO A LA GESTION EN EL DESARROLLO DEL PROGRAMA EN  ADULTO MAYOR EN SITUACION DE DISCAPACIDAD  DEL MUNICIPIO DE GUAITARILLA (N).",
+        "budget" : {
+            "id" : "2019000042",
+            "description" : "CDP",
+            "amount" : {
+                "amount" : 5800000.0,
+                "currency" : "COP"
+            },
+            "projectID" : "0"
+        },
+        "milestones" : [ 
+            {
+                "dueDate" : "2019-01-02T08:00:00.000Z",
+                "id" : 1,
+                "title" : "Apertura",
+                "type" : "preProcurement",
+                "status" : "scheduled"
+            }
+        ]
+    },
+    "tender" : {
+        "id" : "19-12-8875567",
+        "title" : "CD 2019000042",
+        "description" : "SERVICIO DE APOYO A LA GESTION EN EL DESARROLLO DEL PROGRAMA EN  ADULTO MAYOR EN SITUACION DE DISCAPACIDAD  DEL MUNICIPIO DE GUAITARILLA (N).",
+        "status" : "complete",
+        "procuringEntity" : {
+            "id" : "899999701",
+            "name" : "NARIÑO - ALCALDÍA MUNICIPIO DE GUAITARILLA"
+        },
+        "items" : [ 
+            {
+                "id" : "801116",
+                "description" : "Servicios de personal temporal",
+                "classification" : {
+                    "scheme" : "UNSPSC",
+                    "id" : "801116",
+                    "description" : "Servicios de personal temporal",
+                    "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                },
+                "additionalClassifications" : [ 
+                    {
+                        "scheme" : "UNSPSC",
+                        "id" : "8011",
+                        "description" : "Servicios de recursos humanos",
+                        "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                    }
+                ]
+            }
+        ],
+        "value" : {
+            "amount" : 5800000.0,
+            "currency" : "COP"
+        },
+        "procurementMethod" : "limited",
+        "procurementMethodDetails" : "Contratación Directa (Ley 1150 de 2007)",
+        "procurementMethodDetailsRationale" : "Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H)",
+        "submissionMethod" : [ 
+            "inPerson"
+        ],
+        "submissionMethodDetails" : "Municipio obtención: Guaitarilla Municipio entrega: Guaitarilla Municipio ejecución: Nariño - Guaitarilla Lugar aclaraciones: No definido",
+        "expressionAddress" : {
+            "countryName" : "Colombia"
+        },
+        "tenderPeriod" : {
+            "startDate" : "2019-01-02T08:00:00.000Z"
+        },
+        "milestones" : [ 
+            {
+                "dueDate" : "2019-01-02T08:00:00.000Z",
+                "id" : 1,
+                "title" : "Apertura",
+                "type" : "preProcurement",
+                "status" : "scheduled"
+            }
+        ],
+        "coveredBy" : [ 
+            "x_Estatuto_General_de_Contratación"
+        ]
+    },
+    "contracts" : [ 
+        {
+            "id" : 8074190,
+            "awardID" : 8074190,
+            "title" : "CD 2019000042",
+            "description" : "SERVICIO DE APOYO A LA GESTION EN EL DESARROLLO DEL PROGRAMA EN  ADULTO MAYOR EN SITUACION DE DISCAPACIDAD  DEL MUNICIPIO DE GUAITARILLA (N).",
+            "period" : {
+                "startDate" : "2019-01-02T00:00:00.000Z",
+                "durationInDays" : 120
+            },
+            "value" : {
+                "amount" : 5800000.0,
+                "currency" : "COP"
+            },
+            "items" : [ 
+                {
+                    "id" : "801116",
+                    "description" : "Servicios de personal temporal",
+                    "classification" : {
+                        "scheme" : "UNSPSC",
+                        "id" : "801116",
+                        "description" : "Servicios de personal temporal",
+                        "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                    },
+                    "additionalClassifications" : [ 
+                        {
+                            "scheme" : "UNSPSC",
+                            "id" : "8011",
+                            "description" : "Servicios de recursos humanos",
+                            "uri" : "http://www.colombiacompra.gov.co/clasificador-de-bienes-y-servicios"
+                        }
+                    ]
+                }
+            ],
+            "dateSigned" : "2019-01-02T00:00:00.000Z"
+        }
+    ]
+}

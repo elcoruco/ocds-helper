@@ -1,0 +1,220 @@
+{
+    "ocid" : "ocds-k50g02-2328",
+    "id" : "2328",
+    "date" : "2015-04-27T00:00:00.000Z",
+    "tag" : [ 
+        "contract"
+    ],
+    "initiationType" : "tender",
+    "parties" : [ 
+        {
+            "name" : "SUPERINTENDENCIA DE SUBSIDIO FAMILIAR",
+            "id" : "CO-RUE860503600",
+            "identifier" : {
+                "scheme" : "CO-RUE",
+                "id" : "860503600",
+                "legalName" : "SUPERINTENDENCIA DE SUBSIDIO FAMILIAR"
+            },
+            "address" : {
+                "locality" : "Bogotá, D.C.",
+                "region" : "Bogotá, D.C.",
+                "countryName" : "COLOMBIA"
+            },
+            "contactPoint" : {
+                "name" : "Luz Mary Coronado Marin"
+            },
+            "details" : {
+                "obligada" : "Si",
+                "order" : "Nacional",
+                "branch" : "Ejecutiva",
+                "sector" : "Trabajo"
+            },
+            "roles" : [ 
+                "procuringEntity", 
+                "buyer", 
+                "payer"
+            ]
+        }, 
+        {
+            "name" : "CONALCREDITOS – CONALCENTER BPO",
+            "id" : "1",
+            "identifier" : {
+                "id" : "1",
+                "legalName" : "CONALCREDITOS – CONALCENTER BPO"
+            },
+            "address" : {
+                "locality" : "Bogotá, D.C.",
+                "region" : "Bogotá, D.C.",
+                "countryName" : "COLOMBIA"
+            },
+            "details" : {
+                "obligada" : "Si",
+                "order" : "Nacional",
+                "branch" : "Ejecutiva",
+                "sector" : "Trabajo"
+            },
+            "roles" : [ 
+                "supplier", 
+                "payee"
+            ]
+        }
+    ],
+    "buyer" : {
+        "id" : "CO-RUE860503600",
+        "name" : "SUPERINTENDENCIA DE SUBSIDIO FAMILIAR"
+    },
+    "planning" : {
+        "rationale" : "Centro de contacto",
+        "budget" : {
+            "amount" : {
+                "currency" : "COP"
+            }
+        }
+    },
+    "tender" : {
+        "id" : "6214",
+        "title" : "Centro de contacto",
+        "status" : "complete",
+        "procuringEntity" : {
+            "id" : "860503600",
+            "name" : "Luz Mary Coronado Marin"
+        },
+        "items" : [ 
+            {
+                "id" : 1,
+                "description" : "6 - Agente con puesto de trabajo-Agente general_Mes_Baja-Plata - 3 Und",
+                "quantity" : 8,
+                "unit" : {
+                    "name" : "Mes"
+                }
+            }, 
+            {
+                "id" : 2,
+                "description" : "IVA",
+                "quantity" : 1,
+                "unit" : {
+                    "name" : "Unidad"
+                }
+            }, 
+            {
+                "id" : 3,
+                "description" : "Gravámenes adicionales",
+                "quantity" : 1,
+                "unit" : {
+                    "name" : "Unidad"
+                }
+            }
+        ],
+        "value" : {
+            "currency" : "COP"
+        },
+        "procurementMethod" : "selective",
+        "procurementMethodDetails" : "Centro de contacto",
+        "procurementMethodRationale" : "Centro de Contacto Basico",
+        "awardCriteria" : "priceOnly",
+        "submissionMethod" : [ 
+            "electronicSubmission"
+        ],
+        "submissionMethodDetails" : "Bogotá D.C.",
+        "tenderPeriod" : {
+            "startDate" : "2015-04-09T15:38:29.000Z",
+            "endDate" : "2015-04-23T10:07:19.000Z"
+        },
+        "enquiryPeriod" : {
+            "endDate" : "2015-04-23T10:07:19.000Z"
+        },
+        "awardPeriod" : {
+            "startDate" : "2015-04-23T10:07:19.000Z"
+        },
+        "numberOfTenderers" : 0
+    },
+    "awards" : [ 
+        {
+            "id" : "2328",
+            "title" : "Centro de contacto",
+            "description" : "Tecnología",
+            "status" : "active",
+            "date" : "2015-04-27T00:00:00.000Z",
+            "value" : {
+                "amount" : 89088000,
+                "currency" : "COP"
+            },
+            "suppliers" : [ 
+                {
+                    "id" : 1,
+                    "name" : "CONALCREDITOS – CONALCENTER BPO"
+                }
+            ],
+            "items" : [ 
+                {
+                    "id" : 1,
+                    "description" : "6 - Agente con puesto de trabajo-Agente general_Mes_Baja-Plata - 3 Und",
+                    "quantity" : 8,
+                    "unit" : {
+                        "name" : "Mes"
+                    }
+                }, 
+                {
+                    "id" : 2,
+                    "description" : "IVA",
+                    "quantity" : 1,
+                    "unit" : {
+                        "name" : "Unidad"
+                    }
+                }, 
+                {
+                    "id" : 3,
+                    "description" : "Gravámenes adicionales",
+                    "quantity" : 1,
+                    "unit" : {
+                        "name" : "Unidad"
+                    }
+                }
+            ]
+        }
+    ],
+    "contracts" : [ 
+        {
+            "id" : "2328",
+            "awardID" : "2328",
+            "title" : "Centro de contacto",
+            "description" : "Tecnología",
+            "status" : "active",
+            "period" : {
+                "startDate" : "2015-04-27T00:00:00.000Z",
+                "endDate" : "2015-12-31T00:00:00.000Z"
+            },
+            "value" : {
+                "amount" : 89088000,
+                "currency" : "COP"
+            },
+            "items" : [ 
+                {
+                    "id" : 1,
+                    "description" : "6 - Agente con puesto de trabajo-Agente general_Mes_Baja-Plata - 3 Und",
+                    "quantity" : 8,
+                    "unit" : {
+                        "name" : "Mes"
+                    }
+                }, 
+                {
+                    "id" : 2,
+                    "description" : "IVA",
+                    "quantity" : 1,
+                    "unit" : {
+                        "name" : "Unidad"
+                    }
+                }, 
+                {
+                    "id" : 3,
+                    "description" : "Gravámenes adicionales",
+                    "quantity" : 1,
+                    "unit" : {
+                        "name" : "Unidad"
+                    }
+                }
+            ],
+            "dateSigned" : "2015-04-27T00:00:00.000Z"
+        }
+    ]
+}
