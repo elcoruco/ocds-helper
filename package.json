@@ -1,6 +1,6 @@
 {
   "name": "ocds_helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "read ocds files and get stats, values and some practical functions",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,5 @@
   "author": "boris@gobiernofacil.com",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "axios": "^0.20.0"
   }
 }
