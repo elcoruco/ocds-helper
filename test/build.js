@@ -15,45 +15,50 @@ const ocdsSchemas = {
   recordP
 }
 
-//console.log("schemas:", ocdsSchemas);
+// console.log("schemas:", ocdsSchemas);
 
-exports.createOCDSHelper = async ocds => {
-  //console.log("schemas:", this.ocdsSchemas);
+exports.createOCDSHelper = ocds => {
   return {
     ocds,
-    type    : jsonType(ocds),
-    //schemas : this.ocdsSchemas,
-    data    : await getData(ocds)
+    type : jsonType(ocds),
+    data : getData(ocds)
   }
 }
 
-const getData = async ocds => {
+
+const getData = ocds => {
   const type = jsonType(ocds);
   if(type === RELEASE) return accesors.release(ocds);
-  else if(type === RECORDP) return await accesors.recordPackage(ocds);
-  else if(type === RELEASEP) return await accesors.releasePackage(ocds);
+  else if(type === RECORDP) return  accesors.recordPackage(ocds);
+  else if(type === RELEASEP) return  accesors.releasePackage(ocds);
   else return null;
 }
 
 const accesors = {
   release        : rel => rel,
-  releasePackage : rel => rel,
-  recordPackage  :  async(rp, index) => {
+
+  releasePackage : (rp, index) => {
+    const releases = rp.releases;
+    return index ? (releases[index] || null) : (releases.length === 1 ? releases[0] : releases); 
+  },
+
+  recordPackage  :  (rp, index) => {
     const records  = rp.records;
     const response = [];
     // check if has items
     if(!records.length) return null;
 
     for(const rel of records){
-      console.log("rel:", rel);
-      /*
+      //console.log("rel:", rel);
+      
       if(rel.compiledRelease){
-        console.log("compiled!");
         response.push(rel.compiledRelease);
       }
-      */
-       if(rel.releases){
-        console.log("not compiled");
+    }
+
+    return index ? (response[index] || null) : (response.length === 1 ? response[0] : response); 
+      /*
+      else if(rel.releases){
         for(const el of rel.releases){
           let type = releaseType(el);
           if(type == EMBEDDED_RELEASE){
@@ -71,8 +76,8 @@ const accesors = {
           }
         }
       }
-    } 
-    return index ? response[index] : response;  
+     
+    }  */ 
   }
 }
 
@@ -4218,26 +4223,27 @@ const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
-/*
+
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS.createOCDSHelper(res.data)
   console.log("secop:", helper);
 });
-*/
+
 
 // test inai record package 1
 axios.get("/ocds/inai-record-package_1.json").then(res => {
   let helper = readOCDS.createOCDSHelper(res.data)
   console.log("inai:", helper);
 });
-/*
+
+
 // test shcp record package 1
 axios.get("/ocds/shcp-record-package_1.json").then(res => {
   const helper = readOCDS.createOCDSHelper(res.data);
   console.log("shcp:", helper);
 });
-*/
+
 },{"../index":1,"axios":2}],32:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
