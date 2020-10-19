@@ -7,7 +7,7 @@ const axios    = require("axios");
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS.createOCDSHelper(res.data)
-  console.log("secop:", helper, helper.getData("planning.rationale"));
+  console.log("secop:", helper, helper.getData("awards"));
 
 });
 

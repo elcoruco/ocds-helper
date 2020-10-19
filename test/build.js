@@ -49,7 +49,37 @@ const propertyAccesor = (prop, ref) => {
   if(!prop) return null;
 
   const slices = prop.split(".");
+  let response = ref; 
   if( slices.length === 1 ) return ref[prop];
+
+  for(let i = 0; i++; i < slices.length){
+    response = response[slice];
+    
+    // check if is last
+    if(i === slices.length -1) return response;
+
+    // check if fail
+    if(! typeof response === 'object' || response === null) return null;
+  }
+
+  return response;
+  /*
+  slices.forEach( (slice, i) => {
+    response = response[slice];
+
+    // check if is last
+    if(i === slices.length -1) return response;
+
+  });
+  */
+
+  /*
+  for(prop of slices){
+    response = response[prop];
+    // typeof yourVariable === 'object' && yourVariable !== null
+    if(! typeof response === 'object' || response === null) return respon
+  }
+  */
 }
 
 const accesors = {
@@ -4245,7 +4275,7 @@ const axios    = require("axios");
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS.createOCDSHelper(res.data)
-  console.log("secop:", helper, helper.getData("ocid"));
+  console.log("secop:", helper, helper.getData("awards"));
 
 });
 
