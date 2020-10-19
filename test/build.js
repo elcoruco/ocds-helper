@@ -9,6 +9,13 @@ const RECORDP  = "record Package";
 const LINKED_RELEASE   = "Linked Release";
 const EMBEDDED_RELEASE = "Embedded Release";
 
+const TENDER         = "tender";
+const PLANNING       = "planning";
+const AWARD          = "award";
+const CONTRACT       = "contract";
+const IMPLEMENTATION = "implementation";
+
+
 const ocdsSchemas = {
   release,
   releaseP,
@@ -18,10 +25,14 @@ const ocdsSchemas = {
 // console.log("schemas:", ocdsSchemas);
 
 exports.createOCDSHelper = ocds => {
+  const type = jsonType(ocds);
+  const data = getData(ocds);
+
   return {
     ocds,
-    type : jsonType(ocds),
-    data : getData(ocds)
+    type,
+    data,
+    getData : prop => propertyAccesor(prop, data)
   }
 }
 
@@ -32,6 +43,13 @@ const getData = ocds => {
   else if(type === RECORDP) return  accesors.recordPackage(ocds);
   else if(type === RELEASEP) return  accesors.releasePackage(ocds);
   else return null;
+}
+
+const propertyAccesor = (prop, ref) => {
+  if(!prop) return null;
+
+  const slices = prop.split(".");
+  if( slices.length === 1 ) return ref[prop];
 }
 
 const accesors = {
@@ -4227,7 +4245,8 @@ const axios    = require("axios");
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS.createOCDSHelper(res.data)
-  console.log("secop:", helper);
+  console.log("secop:", helper, helper.getData("ocid"));
+
 });
 
 
