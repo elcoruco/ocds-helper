@@ -46,19 +46,31 @@ const getData = ocds => {
 
 const propertyAccesor = (prop, ref) => {
   if(!prop) return null;
-
+  const isArr  = item => Array.isArray(item);
+  const isObj  = item => typeof item === 'object' && item !== null && !isArr(item);
   const slices = prop.split(".");
-  let response = ref; 
+  let response = ref;
+
+  //console.log("slices", slices);
+
+  // return if only one value
   if( slices.length === 1 ) return ref[prop];
 
-  for(let i = 0; i++; i < slices.length){
-    response = response[slice];
+  for(slice of slices){
+    // check if is Array
+    //let slice    = slices[i]; 
+    let isArray  = isArr(response);
+    let isObject = isObj(response);  
     
+    //console.log("response", slice, response, isArray, isObject );
+
+    response = isObject ? response[slice] : (isArray ? response.map(r => isObj(r) ? r[slice] : null) : null)
+    //!isArray ? response[slice] : response.map(r => isObj(r) ? r[slice] : null);
     // check if is last
-    if(i === slices.length -1) return response;
+    //if(i === slices.length -1) return response;
 
     // check if fail
-    if(! typeof response === 'object' || response === null) return null;
+    //if(! typeof response === 'object' || response === null) return null;
   }
 
   return response;
