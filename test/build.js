@@ -47,51 +47,23 @@ const getData = ocds => {
 
 const propertyAccesor = (prop, ref) => {
   if(!prop) return null;
-  const isArr  = item => Array.isArray(item);
-  const isObj  = item => typeof item === 'object' && item !== null && !isArr(item);
-  const slices = prop.split(".");
-  let response = ref;
-
-  //console.log("slices", slices);
+  const isArr   = item => Array.isArray(item);
+  const isObj   = item => typeof item === 'object' && item !== null && !isArr(item);
+  const isEmpty = res  => isArr(res) ? ! res.filter(d => d).length : false; 
+  const slices  = prop.split(".");
+  let response  = ref;
 
   // return if only one value
-  if( slices.length === 1 ) return ref[prop];
+  //if( slices.length === 1 ) return ref[prop];
 
   for(slice of slices){
-    // check if is Array
-    //let slice    = slices[i]; 
     let isArray  = isArr(response);
     let isObject = isObj(response);  
-    
-    //console.log("response", slice, response, isArray, isObject );
-
     response = isObject ? response[slice] : (isArray ? response.map(r => isObj(r) ? r[slice] : null) : null)
-    //!isArray ? response[slice] : response.map(r => isObj(r) ? r[slice] : null);
-    // check if is last
-    //if(i === slices.length -1) return response;
-
-    // check if fail
-    //if(! typeof response === 'object' || response === null) return null;
   }
 
-  return response;
-  /*
-  slices.forEach( (slice, i) => {
-    response = response[slice];
-
-    // check if is last
-    if(i === slices.length -1) return response;
-
-  });
-  */
-
-  /*
-  for(prop of slices){
-    response = response[prop];
-    // typeof yourVariable === 'object' && yourVariable !== null
-    if(! typeof response === 'object' || response === null) return respon
-  }
-  */
+  console.log("is empty:", isEmpty(response));
+  return isEmpty(response) ? null :  response;
 }
 
 const accesors = {
@@ -4287,7 +4259,7 @@ const axios    = require("axios");
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS.createOCDSHelper(res.data)
-  console.log("secop:", helper, helper.getData("awards.description"), helper.getData("planning.budget.amount"),  helper.ocds);
+  console.log("secop:", helper, helper.getData("awards.tr"), helper.getData("planning.budget.amount"),  helper.ocds);
 
 });
 

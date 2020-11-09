@@ -26,3 +26,18 @@ console.log(helper.data);
 ```
 
 
+* to get any value inside the standard file, write a string with the property tree separated by a dot. if the property is inside an array, the helper returns te value for each element of the array (like the description in _awards_) or the value if it's from a single node. If the function don't find any value, it returns _null_
+
+```
+helper.getData("awards.description")
+// expected output:
+// ["description 1", "description 2"]
+
+helper.getData("planning.budget.amount")
+// expected output:
+// {amount: 123, currency : "MXN"}
+
+helper.getData("planning.budget.amount.bananas")
+// expected output:
+// null
+```

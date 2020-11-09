@@ -1,6 +1,6 @@
 {
   "name": "ocds_helper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "read ocds files and get stats, values and some practical functions",
   "main": "index.js",
   "scripts": {
