@@ -3,10 +3,11 @@ const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
+console.log(readOCDS);
 
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
-  const helper = readOCDS.createOCDSHelper(res.data)
+  const helper = readOCDS(res.data)
   console.log("secop:", helper, helper.getData("awards.tr"), helper.getData("planning.budget.amount"),  helper.ocds);
 
 });
@@ -14,13 +15,13 @@ axios.get("/ocds/secop-release_1.json").then(res => {
 
 // test inai record package 1
 axios.get("/ocds/inai-record-package_1.json").then(res => {
-  let helper = readOCDS.createOCDSHelper(res.data)
+  let helper = readOCDS(res.data)
   console.log("inai:", helper, helper.ocds);
 });
 
 
 // test shcp record package 1
 axios.get("/ocds/shcp-record-package_1.json").then(res => {
-  const helper = readOCDS.createOCDSHelper(res.data);
+  const helper = readOCDS(res.data);
   console.log("shcp:", helper, helper.ocds);
 });

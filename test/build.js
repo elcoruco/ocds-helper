@@ -1,4 +1,6 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const reducer  = (accumulator, currentValue) => accumulator + currentValue;
+
 const release  = require("./schemas/release.json");
 const releaseP = require("./schemas/release-package.json");
 const recordP  = require("./schemas/record-package.json");
@@ -24,9 +26,7 @@ const ocdsSchemas = {
   recordP
 }
 
-// console.log("schemas:", ocdsSchemas);
-
-exports.createOCDSHelper = ocds => {
+const createOCDSHelper = ocds => {
   const type     = jsonType(ocds);
   const data     = getData(ocds);
   const state    =  getState(data);
@@ -88,18 +88,14 @@ const getDiffDays = date => {
   if(!date) return null;
   // https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
   const _MS_PER_DAY = 1000 * 60 * 60 * 24;
-  // a and b are javascript Date objects
   const dateDiffInDays = (a, b) => {
-    // Discard the time and time-zone information.
     const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
     const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
     return Math.floor((utc2 - utc1) / _MS_PER_DAY);
   }
 
-
   return dateDiffInDays(new Date(date), new Date());
 }
-
 
 const getData = ocds => {
   const type = jsonType(ocds);
@@ -125,14 +121,12 @@ const propertyAccesor = (prop, ref) => {
     let isObject = isObj(response);  
     response = isObject ? response[slice] : (isArray ? response.map(r => isObj(r) ? r[slice] : null) : null)
   }
-
-  console.log("is empty:", isEmpty(response));
+  
   return isEmpty(response) ? null :  response;
 }
 
 const accesors = {
   release        : rel => rel,
-
   releasePackage : (rp, index) => {
     const releases = rp.releases;
     return index ? (releases[index] || null) : (releases.length === 1 ? releases[0] : releases); 
@@ -145,8 +139,6 @@ const accesors = {
     if(!records.length) return null;
 
     for(const rel of records){
-      //console.log("rel:", rel);
-      
       if(rel.compiledRelease){
         response.push(rel.compiledRelease);
       }
@@ -191,6 +183,36 @@ const releaseType = rel => {
   else if(rel.ocid && rel.date) return EMBEDDED_RELEASE;
   else return null;
 }
+
+
+// ----------------------------------------------------------------
+// UMD WRAPPER
+// https://github.com/umdjs/umd/blob/master/templates/returnExports.js
+// ----------------------------------------------------------------
+
+// if the module has no dependencies, the above pattern can be simplified to
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+      // AMD. Register as an anonymous module.
+      define([], factory);
+  } else if (typeof module === 'object' && module.exports) {
+      // Node. Does not work with strict CommonJS, but
+      // only CommonJS-like environments that support module.exports,
+      // like Node.
+      module.exports = factory();
+  } else {
+      // Browser globals (root is window)
+      root['createOCDSHelper'] = factory();
+}
+}(typeof self !== 'undefined' ? self : this, function () {
+
+  // Just return a value to define the module export.
+  // This example returns an object, but the module
+  // can return a function as the exported value.
+
+
+  return createOCDSHelper;
+}));
 
 
 },{"./schemas/record-package.json":28,"./schemas/release-package.json":29,"./schemas/release.json":30}],2:[function(require,module,exports){
@@ -4319,10 +4341,11 @@ const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
+console.log(readOCDS);
 
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
-  const helper = readOCDS.createOCDSHelper(res.data)
+  const helper = readOCDS(res.data)
   console.log("secop:", helper, helper.getData("awards.tr"), helper.getData("planning.budget.amount"),  helper.ocds);
 
 });
@@ -4330,14 +4353,14 @@ axios.get("/ocds/secop-release_1.json").then(res => {
 
 // test inai record package 1
 axios.get("/ocds/inai-record-package_1.json").then(res => {
-  let helper = readOCDS.createOCDSHelper(res.data)
+  let helper = readOCDS(res.data)
   console.log("inai:", helper, helper.ocds);
 });
 
 
 // test shcp record package 1
 axios.get("/ocds/shcp-record-package_1.json").then(res => {
-  const helper = readOCDS.createOCDSHelper(res.data);
+  const helper = readOCDS(res.data);
   console.log("shcp:", helper, helper.ocds);
 });
 
