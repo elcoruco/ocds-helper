@@ -14,6 +14,8 @@ const AWARD          = "award";
 const CONTRACT       = "contract";
 const IMPLEMENTATION = "implementation";
 
+const FAIL = null;
+
 
 const ocdsSchemas = {
   release,
@@ -24,15 +26,77 @@ const ocdsSchemas = {
 // console.log("schemas:", ocdsSchemas);
 
 exports.createOCDSHelper = ocds => {
-  const type = jsonType(ocds);
-  const data = getData(ocds);
+  const type     = jsonType(ocds);
+  const data     = getData(ocds);
+  const state    =  getState(data);
+  const daysDiff = getDiffDays(data.date);
 
   return {
     ocds,
     type,
     data,
-    getData : prop => propertyAccesor(prop, data)
+    state,
+    daysDiff,
+    getData : prop => propertyAccesor(prop, data),
+    constants : {
+      states : {
+        TENDER,
+        PLANNING,
+        AWARD,
+        CONTRACT,
+        IMPLEMENTATION,
+        FAIL 
+      }
+    }
   }
+}
+
+const getState = rel => {
+  if(!rel) return null;
+
+  let planning       = !!rel.planning,
+      tender         = !!rel.tender,
+      award          = rel.awards && rel.awards.length,
+      contract       = rel.contracts && rel.contracts.length,
+      implementation = contract && rel.contracts.find(con => con.implementation),
+      state;
+
+  if (implementation) {
+    state = IMPLEMENTATION;
+  }
+  else if (contract) {
+    state = CONTRACT;
+  }
+  else if (award) {
+    state = AWARD;
+  }
+  else if (tender) {
+    state = TENDER;
+  }
+  else if (planning) {
+    state = PLANNING;
+  }
+  else {
+    state = FAIL;
+  }
+
+  return state;
+}
+
+const getDiffDays = date => {
+  if(!date) return null;
+  // https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
+  const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+  // a and b are javascript Date objects
+  const dateDiffInDays = (a, b) => {
+    // Discard the time and time-zone information.
+    const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+    const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+    return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+  }
+
+
+  return dateDiffInDays(new Date(date), new Date());
 }
 
 

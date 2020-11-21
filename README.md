@@ -12,7 +12,7 @@ const readOCDS = require("ocds_helper");
 
 ```
 axios.get("/ocds/secop-release_1.json").then(res => {
-  const helper = readOCDS.createOCDSHelper(ocdsJson)
+  const helper = readOCDS.createOCDSHelper(res.data)
 });
 ```
 
