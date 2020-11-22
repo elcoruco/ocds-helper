@@ -53,6 +53,7 @@ const createOCDSHelper = ocds => {
     daysDiff,
     amount,
     getData : prop => propertyAccesor(prop, data),
+    getStateAmount : st => getAmount(st, data),
     constants : {
       states : {
         TENDER,
@@ -98,7 +99,7 @@ const getAmount = (state, rel) => {
     amount = propertyAccesor('awards.value', rel);
     return amount ? {
       source : AWARD,
-      data   : amount
+      data   : sumAmount(amount)
     } : FAIL;
   }
 
@@ -106,7 +107,7 @@ const getAmount = (state, rel) => {
     amount = propertyAccesor('contracts.value', rel);
     return amount ? {
       source : CONTRACT,
-      data   : amount
+      data   : sumAmount(amount)
     } : FAIL;
   }
 
@@ -114,9 +115,20 @@ const getAmount = (state, rel) => {
     amount = propertyAccesor('contracts.implementation.transactions.value', rel);
     return amount ? {
       source : IMPLEMENTATION,
-      data   : amount
+      data   : sumAmount(amount)
     } : FAIL;
   }
+}
+
+const sumAmount = amountArray => {
+  const currencies = [...new Set( amountArray.map(d => d.currency) )]
+  
+  return currencies.map( currency => {
+    return {
+      currency,
+      amount : amountArray.map(d => d.amount).filter(d => d).reduce(reducer, 0)
+    }
+  }).sort( (a,b) => a.amount > b.amount ? 1 : -1)
 }
 
 const propertyAccesor = (prop, ref) => {
