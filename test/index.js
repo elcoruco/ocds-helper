@@ -3,8 +3,6 @@ const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
-console.log(readOCDS);
-
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS(res.data)
@@ -16,7 +14,7 @@ axios.get("/ocds/secop-release_1.json").then(res => {
 // test inai record package 1
 axios.get("/ocds/inai-record-package_1.json").then(res => {
   let helper = readOCDS(res.data)
-  console.log("inai:", helper, helper.ocds);
+  //console.log("inai:", helper, helper.ocds);
 });
 
 

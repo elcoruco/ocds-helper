@@ -1,4 +1,11 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+/*
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/
+/  Define constantes y métodos de ayuda
+/
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+*/
 const reducer  = (accumulator, currentValue) => accumulator + currentValue;
 
 const release  = require("./schemas/release.json");
@@ -26,18 +33,26 @@ const ocdsSchemas = {
   recordP
 }
 
+/*
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/
+/  Define el plugin
+/
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+*/
 const createOCDSHelper = ocds => {
   const type     = jsonType(ocds);
   const data     = getData(ocds);
   const state    =  getState(data);
   const daysDiff = getDiffDays(data.date);
-
+  const amount   = getAmount(state, data)
   return {
     ocds,
     type,
     data,
     state,
     daysDiff,
+    amount,
     getData : prop => propertyAccesor(prop, data),
     constants : {
       states : {
@@ -52,6 +67,102 @@ const createOCDSHelper = ocds => {
   }
 }
 
+/*
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/
+/  define los métodos del plugin
+/
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+*/
+const getAmount = (state, rel) => {
+  if(!state) return FAIL;
+
+  let amount;
+
+  if(state === PLANNING){
+    amount = propertyAccesor('planning.budget.amount', rel)
+    return amount ? {
+      source : PLANNING,
+      data : [amount]
+    } : FAIL;
+  }
+
+  if(state === TENDER){
+    amount = propertyAccesor('tender.value', rel) || propertyAccesor('tender.minValue', rel);
+    return amount ? {
+      source : TENDER,
+      data   : [amount]
+    } : FAIL;
+  }
+
+  if(state === AWARD){
+    amount = propertyAccesor('awards.value', rel);
+    return amount ? {
+      source : AWARD,
+      data   : amount
+    } : FAIL;
+  }
+
+  if(state === CONTRACT){
+    amount = propertyAccesor('contracts.value', rel);
+    return amount ? {
+      source : CONTRACT,
+      data   : amount
+    } : FAIL;
+  }
+
+  if(state === IMPLEMENTATION){
+    amount = propertyAccesor('contracts.implementation.transactions.value', rel);
+    return amount ? {
+      source : IMPLEMENTATION,
+      data   : amount
+    } : FAIL;
+  }
+}
+
+const propertyAccesor = (prop, ref) => {
+  if(!prop) return null;
+  const isArr   = item => Array.isArray(item);
+  const isObj   = item => typeof item === 'object' && item !== null && !isArr(item);
+  const isEmpty = res  => isArr(res) ? ! res.filter(d => d).length : false; 
+  const slices  = prop.split(".");
+  let response  = ref;
+
+  for(slice of slices){
+    let isArray  = isArr(response);
+    let isObject = isObj(response);  
+    if(isObject){
+      response = response[slice]
+    }
+    else if(isArray){
+      response = response.filter(r => r).map(r => {
+        if( isObj(r) ){
+          return r[slice]
+        }
+        else if(isArr(r)){
+          return r.map(s => s[slice])
+        }
+        else{
+          return FAIL
+        }
+      }).flat();
+    }
+    else{
+      response = FAIL;
+    }
+  }
+  
+  return isEmpty(response) ? null :  response;
+}
+
+/*
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/
+/  define métodos que se ocupan una sola vez
+/  y que no forman parte del plugin
+/
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+*/
 const getState = rel => {
   if(!rel) return null;
 
@@ -84,9 +195,9 @@ const getState = rel => {
   return state;
 }
 
+// https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
 const getDiffDays = date => {
   if(!date) return null;
-  // https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
   const _MS_PER_DAY = 1000 * 60 * 60 * 24;
   const dateDiffInDays = (a, b) => {
     const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
@@ -103,26 +214,6 @@ const getData = ocds => {
   else if(type === RECORDP) return  accesors.recordPackage(ocds);
   else if(type === RELEASEP) return  accesors.releasePackage(ocds);
   else return null;
-}
-
-const propertyAccesor = (prop, ref) => {
-  if(!prop) return null;
-  const isArr   = item => Array.isArray(item);
-  const isObj   = item => typeof item === 'object' && item !== null && !isArr(item);
-  const isEmpty = res  => isArr(res) ? ! res.filter(d => d).length : false; 
-  const slices  = prop.split(".");
-  let response  = ref;
-
-  // return if only one value
-  //if( slices.length === 1 ) return ref[prop];
-
-  for(slice of slices){
-    let isArray  = isArr(response);
-    let isObject = isObj(response);  
-    response = isObject ? response[slice] : (isArray ? response.map(r => isObj(r) ? r[slice] : null) : null)
-  }
-  
-  return isEmpty(response) ? null :  response;
 }
 
 const accesors = {
@@ -4341,8 +4432,6 @@ const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
-console.log(readOCDS);
-
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
   const helper = readOCDS(res.data)
@@ -4354,7 +4443,7 @@ axios.get("/ocds/secop-release_1.json").then(res => {
 // test inai record package 1
 axios.get("/ocds/inai-record-package_1.json").then(res => {
   let helper = readOCDS(res.data)
-  console.log("inai:", helper, helper.ocds);
+  //console.log("inai:", helper, helper.ocds);
 });
 
 

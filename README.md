@@ -1,4 +1,4 @@
-# ocds-helper
+# ocds-helper v2
 My ocds plugin helper
 
 ## How to use it
@@ -12,7 +12,7 @@ const readOCDS = require("ocds_helper");
 
 ```
 axios.get("/ocds/secop-release_1.json").then(res => {
-  const helper = readOCDS.createOCDSHelper(res.data)
+  const helper = readOCDS(res.data)
 });
 ```
 
