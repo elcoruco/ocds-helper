@@ -174,6 +174,9 @@ const propertyAccesor = (prop, ref, condition) => {
       if(condition.type === "contains"){
         return item[condition.field].indexOf(condition.value) !== -1;
       }
+      else if(condition.type === "equals"){
+        return item[condition.field] == condition.value;
+      }
       else{
         return;
       }
