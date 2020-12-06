@@ -52,7 +52,7 @@ const createOCDSHelper = ocds => {
     state,
     daysDiff,
     amount,
-    getData : prop => propertyAccesor(prop, data),
+    getData : (prop, condition) => propertyAccesor(prop, data, condition),
     getStateAmount : st => getAmount(st, data),
     constants : {
       states : {
@@ -131,10 +131,11 @@ const sumAmount = amountArray => {
   }).sort( (a,b) => a.amount > b.amount ? 1 : -1)
 }
 
-const propertyAccesor = (prop, ref) => {
+const propertyAccesor = (prop, ref, condition) => {
   if(!prop) return null;
   const isArr   = item => Array.isArray(item);
   const isObj   = item => typeof item === 'object' && item !== null && !isArr(item);
+  const isStr   = item => typeof item === 'string' || item instanceof String;
   const isEmpty = res  => isArr(res) ? ! res.filter(d => d).length : false; 
   const slices  = prop.split(".");
   let response  = ref;
@@ -163,7 +164,26 @@ const propertyAccesor = (prop, ref) => {
     }
   }
   
-  return isEmpty(response) ? null :  response;
+  // return isEmpty(response) ? null :  response;
+  if( isEmpty(response) ) return null;
+
+  if(!condition) return response;
+
+  if(condition && isArr(response)){
+    let items =  response.filter(item => {
+      if(condition.type === "contains"){
+        return item[condition.field].indexOf(condition.value) !== -1;
+      }
+      else{
+        return;
+      }
+    });
+
+    return items.length ? items : FAIL;
+  }
+
+
+
 }
 
 /*

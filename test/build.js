@@ -53,7 +53,7 @@ const createOCDSHelper = ocds => {
     state,
     daysDiff,
     amount,
-    getData : prop => propertyAccesor(prop, data),
+    getData : (prop, condition) => propertyAccesor(prop, data, condition),
     getStateAmount : st => getAmount(st, data),
     constants : {
       states : {
@@ -132,10 +132,11 @@ const sumAmount = amountArray => {
   }).sort( (a,b) => a.amount > b.amount ? 1 : -1)
 }
 
-const propertyAccesor = (prop, ref) => {
+const propertyAccesor = (prop, ref, condition) => {
   if(!prop) return null;
   const isArr   = item => Array.isArray(item);
   const isObj   = item => typeof item === 'object' && item !== null && !isArr(item);
+  const isStr   = item => typeof item === 'string' || item instanceof String;
   const isEmpty = res  => isArr(res) ? ! res.filter(d => d).length : false; 
   const slices  = prop.split(".");
   let response  = ref;
@@ -164,7 +165,26 @@ const propertyAccesor = (prop, ref) => {
     }
   }
   
-  return isEmpty(response) ? null :  response;
+  // return isEmpty(response) ? null :  response;
+  if( isEmpty(response) ) return null;
+
+  if(!condition) return response;
+
+  if(condition && isArr(response)){
+    let items =  response.filter(item => {
+      if(condition.type === "contains"){
+        return item[condition.field].indexOf(condition.value) !== -1;
+      }
+      else{
+        return;
+      }
+    });
+
+    return items.length ? items : FAIL;
+  }
+
+
+
 }
 
 /*
@@ -4445,17 +4465,17 @@ const axios    = require("axios");
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
 // test secop release 1
-axios.get("/ocds/secop-release_1.json").then(res => {
-  const helper = readOCDS(res.data)
-  console.log("secop:", helper, helper.ocds);
-  console.log("secop:", helper, helper.ocds);
-  console.log("secop planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
-  console.log("secop tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
-  console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
-  console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
-  console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+// axios.get("/ocds/secop-release_1.json").then(res => {
+//   const helper = readOCDS(res.data)
+//   console.log("secop:", helper, helper.ocds);
+//   console.log("secop:", helper, helper.ocds);
+//   console.log("secop planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
+//   console.log("secop tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
+//   console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
+//   console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
+//   console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
 
-});
+// });
 
 
 // test inai record package 1
@@ -4467,20 +4487,21 @@ axios.get("/ocds/inai-record-package_1.json").then(res => {
   console.log("inai award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("inai contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("inai implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("inai buyer", helper.getData("parties", {type : "contains", field : "roles", value : "supplier"}) );
 });
 
 
 // test shcp record package 1
-axios.get("/ocds/shcp-record-package_1.json").then(res => {
-  const helper = readOCDS(res.data);
-  console.log("shcp:", helper, helper.ocds);
-  console.log("shcp:", helper, helper.ocds);
-  console.log("shcp planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
-  console.log("shcp tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
-  console.log("shcp award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
-  console.log("shcp contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
-  console.log("shcp implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
-});
+// axios.get("/ocds/shcp-record-package_1.json").then(res => {
+//   const helper = readOCDS(res.data);
+//   console.log("shcp:", helper, helper.ocds);
+//   console.log("shcp:", helper, helper.ocds);
+//   console.log("shcp planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
+//   console.log("shcp tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
+//   console.log("shcp award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
+//   console.log("shcp contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
+//   console.log("shcp implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+// });
 
 },{"../index":1,"axios":2}],32:[function(require,module,exports){
 // shim for using process in browser
