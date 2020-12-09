@@ -1,0 +1,1608 @@
+{
+    "ocid": "ocds-lcuori-P2020-60-1-4688",
+    "releases": [
+        {
+            "id": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+            "tag": [
+                "planning",
+                "award",
+                "contract",
+                "implementation"
+            ],
+            "date": "2020-10-09T13:25:21Z",
+            "ocid": "ocds-lcuori-P2020-60-1-4688",
+            "buyer": {
+                "id": "HN-ENG-60",
+                "name": "Secretar\u00eda de Salud"
+            },
+            "awards": [
+                {
+                    "id": "A2020-60-1-4688-1",
+                    "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                    "value": {
+                        "amount": 905883.75,
+                        "currency": "HNL"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "HN-RTN-05019003081452",
+                            "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L."
+                        }
+                    ],
+                    "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS"
+                }
+            ],
+            "parties": [
+                {
+                    "id": "HN-RTN-05019003081452",
+                    "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                    "roles": [
+                        "supplier"
+                    ],
+                    "address": {
+                        "region": "ND",
+                        "locality": "5",
+                        "postalCode": "ND",
+                        "countryName": "HN",
+                        "streetAddress": "COL ALTAMIRA 3 CUADRAS AL OESTE  HOSPITAL CEMESA"
+                    },
+                    "identifier": {
+                        "id": "HN-RTN-05019003081452",
+                        "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/proveedor/HN-RTN-05019003081452",
+                        "scheme": "HN-RTN",
+                        "legalName": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L."
+                    },
+                    "contactPoint": {
+                        "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                        "email": "noraguevaragonzalez@gmail.com",
+                        "faxNumber": "ND",
+                        "telephone": "2544-04-00"
+                    }
+                },
+                {
+                    "id": "HN-ENG-60",
+                    "name": "Secretar\u00eda de Salud",
+                    "roles": [
+                        "buyer"
+                    ],
+                    "address": {
+                        "region": "ND",
+                        "locality": "8",
+                        "postalCode": "ND",
+                        "countryName": "HN",
+                        "streetAddress": "EDIFICIO PRINCIPAL, AVE. CERVANTES, 3ERA CALLE #1001"
+                    },
+                    "identifier": {
+                        "id": "60",
+                        "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/instituciones/institucion/60",
+                        "scheme": "HND-ENG",
+                        "legalName": "Secretar\u00eda de Salud"
+                    },
+                    "contactPoint": {
+                        "name": "Secretar\u00eda de Salud",
+                        "email": "gerenciasesal2013@gmail.com",
+                        "faxNumber": "2378158",
+                        "telephone": "222-5771"
+                    }
+                }
+            ],
+            "sources": [
+                {
+                    "id": "HN.SIAFI2",
+                    "url": "http://www.sefin.gob.hn",
+                    "name": "Sistema de Informacion Financiero Integrado v2.0"
+                }
+            ],
+            "language": "es",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 905883.75,
+                        "currency": "HNL"
+                    },
+                    "budgetBreakdown": [
+                        {
+                            "id": "2020-60-1-53-1-0-0-5-11-1-23500-0",
+                            "measures": {
+                                "comprometido": 905883.75,
+                                "precomprometido": 905883.75,
+                                "ajusteComprometido": 0.0,
+                                "ajustePrecomprometido": 0.0
+                            },
+                            "classifications": {
+                                "ga": "1 - GERENCIA CENTRAL",
+                                "ue": "53 - GERENCIA ADMINISTRATIVA",
+                                "fuente": "11 - Tesoro Nacional",
+                                "objeto": "23500-Limpieza, Aseo y Fumigaci\u00f3n",
+                                "gestion": "2020",
+                                "programa": "1 - ACTIVIDADES CENTRALES",
+                                "proyecto": "0 - -",
+                                "organismo": "1 - Tesorer\u00eda General de la Rep\u00fablica - Efectivo",
+                                "institucion": "60 - Secretar\u00eda de Salud",
+                                "subPrograma": "0 - -",
+                                "actividadObra": "5 - SERVICIOS ADMINISTRATIVOS Y CONTABLES",
+                                "trfBeneficiario": "0"
+                            }
+                        }
+                    ]
+                },
+                "rationale": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS"
+            },
+            "contracts": [
+                {
+                    "id": "C2020-60-1-4688-1",
+                    "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                    "value": {
+                        "amount": 905883.75,
+                        "currency": "HNL"
+                    },
+                    "awardID": "A2020-60-1-4688-1",
+                    "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                    "implementation": {
+                        "transactions": [
+                            {
+                                "id": "T2020-449-1-TRB-373090",
+                                "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/transacciones/T2020-449-1-TRB-373090",
+                                "date": "2020-11-02T13:58:56Z",
+                                "payee": {
+                                    "id": "HN-RTN-05019003081452",
+                                    "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L."
+                                },
+                                "payer": {
+                                    "id": "HN-ENG-449",
+                                    "name": "Servicios Financieros de la Administraci\u00f3n Central"
+                                },
+                                "value": {
+                                    "amount": 787725.0,
+                                    "currency": "HNL"
+                                },
+                                "budgetSources": [
+                                    "2020-60-1-53-1-0-0-5-11-1-23500-0"
+                                ],
+                                "financialObligationIds": [
+                                    "D2020-60-1-4688-1-1-0"
+                                ]
+                            }
+                        ],
+                        "financialObligations": [
+                            {
+                                "id": "D2020-60-1-4688-1-1-0",
+                                "bill": {
+                                    "id": "1791-2020-GA",
+                                    "date": "2020-09-25T00:00:00Z",
+                                    "type": "OFI",
+                                    "amount": {
+                                        "amount": 905883.75,
+                                        "currency": "HNL"
+                                    },
+                                    "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS"
+                                },
+                                "retentions": [
+                                    {
+                                        "name": "IMPUESTO SOBRE VENTAS 15%",
+                                        "amount": {
+                                            "amount": 118158.75,
+                                            "currency": "HNL"
+                                        }
+                                    }
+                                ],
+                                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                                "approvalDate": "2020-10-09T13:25:21Z"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "initiationType": "tender"
+        }
+    ],
+    "compiledRelease": {
+        "id": "ocds-lcuori-P2020-60-1-4688-2020-10-09T13:25:21Z",
+        "tag": [
+            "compiled"
+        ],
+        "date": "2020-10-09T13:25:21Z",
+        "ocid": "ocds-lcuori-P2020-60-1-4688",
+        "buyer": {
+            "id": "HN-ENG-60",
+            "name": "Secretar\u00eda de Salud"
+        },
+        "awards": [
+            {
+                "id": "A2020-60-1-4688-1",
+                "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                "value": {
+                    "amount": 905883.75,
+                    "currency": "HNL"
+                },
+                "suppliers": [
+                    {
+                        "id": "HN-RTN-05019003081452",
+                        "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L."
+                    }
+                ],
+                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS"
+            }
+        ],
+        "parties": [
+            {
+                "id": "HN-RTN-05019003081452",
+                "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                "roles": [
+                    "supplier"
+                ],
+                "address": {
+                    "region": "ND",
+                    "locality": "5",
+                    "postalCode": "ND",
+                    "countryName": "HN",
+                    "streetAddress": "COL ALTAMIRA 3 CUADRAS AL OESTE  HOSPITAL CEMESA"
+                },
+                "identifier": {
+                    "id": "HN-RTN-05019003081452",
+                    "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/proveedor/HN-RTN-05019003081452",
+                    "scheme": "HN-RTN",
+                    "legalName": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L."
+                },
+                "contactPoint": {
+                    "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                    "email": "noraguevaragonzalez@gmail.com",
+                    "faxNumber": "ND",
+                    "telephone": "2544-04-00"
+                }
+            },
+            {
+                "id": "HN-ENG-60",
+                "name": "Secretar\u00eda de Salud",
+                "roles": [
+                    "buyer"
+                ],
+                "address": {
+                    "region": "ND",
+                    "locality": "8",
+                    "postalCode": "ND",
+                    "countryName": "HN",
+                    "streetAddress": "EDIFICIO PRINCIPAL, AVE. CERVANTES, 3ERA CALLE #1001"
+                },
+                "identifier": {
+                    "id": "60",
+                    "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/instituciones/institucion/60",
+                    "scheme": "HND-ENG",
+                    "legalName": "Secretar\u00eda de Salud"
+                },
+                "contactPoint": {
+                    "name": "Secretar\u00eda de Salud",
+                    "email": "gerenciasesal2013@gmail.com",
+                    "faxNumber": "2378158",
+                    "telephone": "222-5771"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "id": "HN.SIAFI2",
+                "url": "http://www.sefin.gob.hn",
+                "name": "Sistema de Informacion Financiero Integrado v2.0"
+            }
+        ],
+        "language": "es",
+        "planning": {
+            "budget": {
+                "amount": {
+                    "amount": 905883.75,
+                    "currency": "HNL"
+                },
+                "budgetBreakdown": [
+                    {
+                        "id": "2020-60-1-53-1-0-0-5-11-1-23500-0",
+                        "measures": {
+                            "comprometido": 905883.75,
+                            "precomprometido": 905883.75,
+                            "ajusteComprometido": 0.0,
+                            "ajustePrecomprometido": 0.0
+                        },
+                        "classifications": {
+                            "ga": "1 - GERENCIA CENTRAL",
+                            "ue": "53 - GERENCIA ADMINISTRATIVA",
+                            "fuente": "11 - Tesoro Nacional",
+                            "objeto": "23500-Limpieza, Aseo y Fumigaci\u00f3n",
+                            "gestion": "2020",
+                            "programa": "1 - ACTIVIDADES CENTRALES",
+                            "proyecto": "0 - -",
+                            "organismo": "1 - Tesorer\u00eda General de la Rep\u00fablica - Efectivo",
+                            "institucion": "60 - Secretar\u00eda de Salud",
+                            "subPrograma": "0 - -",
+                            "actividadObra": "5 - SERVICIOS ADMINISTRATIVOS Y CONTABLES",
+                            "trfBeneficiario": "0"
+                        }
+                    }
+                ]
+            },
+            "rationale": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS"
+        },
+        "contracts": [
+            {
+                "id": "C2020-60-1-4688-1",
+                "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                "value": {
+                    "amount": 905883.75,
+                    "currency": "HNL"
+                },
+                "awardID": "A2020-60-1-4688-1",
+                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                "implementation": {
+                    "transactions": [
+                        {
+                            "id": "T2020-449-1-TRB-373090",
+                            "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/transacciones/T2020-449-1-TRB-373090",
+                            "date": "2020-11-02T13:58:56Z",
+                            "payee": {
+                                "id": "HN-RTN-05019003081452",
+                                "name": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L."
+                            },
+                            "payer": {
+                                "id": "HN-ENG-449",
+                                "name": "Servicios Financieros de la Administraci\u00f3n Central"
+                            },
+                            "value": {
+                                "amount": 787725.0,
+                                "currency": "HNL"
+                            },
+                            "budgetSources": [
+                                "2020-60-1-53-1-0-0-5-11-1-23500-0"
+                            ],
+                            "financialObligationIds": [
+                                "D2020-60-1-4688-1-1-0"
+                            ]
+                        }
+                    ],
+                    "financialObligations": [
+                        {
+                            "id": "D2020-60-1-4688-1-1-0",
+                            "bill": {
+                                "id": "1791-2020-GA",
+                                "date": "2020-09-25T00:00:00Z",
+                                "type": "OFI",
+                                "amount": {
+                                    "amount": 905883.75,
+                                    "currency": "HNL"
+                                },
+                                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS"
+                            },
+                            "retentions": [
+                                {
+                                    "name": "IMPUESTO SOBRE VENTAS 15%",
+                                    "amount": {
+                                        "amount": 118158.75,
+                                        "currency": "HNL"
+                                    }
+                                }
+                            ],
+                            "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                            "approvalDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "initiationType": "tender"
+    },
+    "versionedRelease": {
+        "ocid": "ocds-lcuori-P2020-60-1-4688",
+        "buyer": {
+            "id": [
+                {
+                    "value": "HN-ENG-60",
+                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                    "releaseTag": [
+                        "planning",
+                        "award",
+                        "contract",
+                        "implementation"
+                    ],
+                    "releaseDate": "2020-10-09T13:25:21Z"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Secretar\u00eda de Salud",
+                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                    "releaseTag": [
+                        "planning",
+                        "award",
+                        "contract",
+                        "implementation"
+                    ],
+                    "releaseDate": "2020-10-09T13:25:21Z"
+                }
+            ]
+        },
+        "awards": [
+            {
+                "id": "A2020-60-1-4688-1",
+                "title": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "value": {
+                    "amount": [
+                        {
+                            "value": 905883.75,
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "currency": [
+                        {
+                            "value": "HNL",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "suppliers": [
+                    {
+                        "id": "HN-RTN-05019003081452",
+                        "name": [
+                            {
+                                "value": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                                "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                "releaseTag": [
+                                    "planning",
+                                    "award",
+                                    "contract",
+                                    "implementation"
+                                ],
+                                "releaseDate": "2020-10-09T13:25:21Z"
+                            }
+                        ]
+                    }
+                ],
+                "description": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ]
+            }
+        ],
+        "parties": [
+            {
+                "id": "HN-RTN-05019003081452",
+                "name": [
+                    {
+                        "value": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "roles": [
+                    {
+                        "value": [
+                            "supplier"
+                        ],
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "address": {
+                    "region": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "locality": [
+                        {
+                            "value": "5",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "postalCode": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "countryName": [
+                        {
+                            "value": "HN",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "streetAddress": [
+                        {
+                            "value": "COL ALTAMIRA 3 CUADRAS AL OESTE  HOSPITAL CEMESA",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "identifier": {
+                    "id": [
+                        {
+                            "value": "HN-RTN-05019003081452",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "uri": [
+                        {
+                            "value": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/proveedor/HN-RTN-05019003081452",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "scheme": [
+                        {
+                            "value": "HN-RTN",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "legalName": [
+                        {
+                            "value": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "contactPoint": {
+                    "name": [
+                        {
+                            "value": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "email": [
+                        {
+                            "value": "noraguevaragonzalez@gmail.com",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "faxNumber": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "telephone": [
+                        {
+                            "value": "2544-04-00",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "HN-ENG-60",
+                "name": [
+                    {
+                        "value": "Secretar\u00eda de Salud",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "roles": [
+                    {
+                        "value": [
+                            "buyer"
+                        ],
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "address": {
+                    "region": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "locality": [
+                        {
+                            "value": "8",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "postalCode": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "countryName": [
+                        {
+                            "value": "HN",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "streetAddress": [
+                        {
+                            "value": "EDIFICIO PRINCIPAL, AVE. CERVANTES, 3ERA CALLE #1001",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "identifier": {
+                    "id": [
+                        {
+                            "value": "60",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "uri": [
+                        {
+                            "value": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/instituciones/institucion/60",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "scheme": [
+                        {
+                            "value": "HND-ENG",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "legalName": [
+                        {
+                            "value": "Secretar\u00eda de Salud",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "contactPoint": {
+                    "name": [
+                        {
+                            "value": "Secretar\u00eda de Salud",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "email": [
+                        {
+                            "value": "gerenciasesal2013@gmail.com",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "faxNumber": [
+                        {
+                            "value": "2378158",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "telephone": [
+                        {
+                            "value": "222-5771",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "sources": [
+            {
+                "id": "HN.SIAFI2",
+                "url": [
+                    {
+                        "value": "http://www.sefin.gob.hn",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "name": [
+                    {
+                        "value": "Sistema de Informacion Financiero Integrado v2.0",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ]
+            }
+        ],
+        "language": [
+            {
+                "value": "es",
+                "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                "releaseTag": [
+                    "planning",
+                    "award",
+                    "contract",
+                    "implementation"
+                ],
+                "releaseDate": "2020-10-09T13:25:21Z"
+            }
+        ],
+        "planning": {
+            "budget": {
+                "amount": {
+                    "amount": [
+                        {
+                            "value": 905883.75,
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "currency": [
+                        {
+                            "value": "HNL",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "budgetBreakdown": [
+                    {
+                        "id": "2020-60-1-53-1-0-0-5-11-1-23500-0",
+                        "measures": {
+                            "comprometido": [
+                                {
+                                    "value": 905883.75,
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "precomprometido": [
+                                {
+                                    "value": 905883.75,
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "ajusteComprometido": [
+                                {
+                                    "value": 0.0,
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "ajustePrecomprometido": [
+                                {
+                                    "value": 0.0,
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ]
+                        },
+                        "classifications": {
+                            "ga": [
+                                {
+                                    "value": "1 - GERENCIA CENTRAL",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "ue": [
+                                {
+                                    "value": "53 - GERENCIA ADMINISTRATIVA",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "fuente": [
+                                {
+                                    "value": "11 - Tesoro Nacional",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "objeto": [
+                                {
+                                    "value": "23500-Limpieza, Aseo y Fumigaci\u00f3n",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "gestion": [
+                                {
+                                    "value": "2020",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "programa": [
+                                {
+                                    "value": "1 - ACTIVIDADES CENTRALES",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "proyecto": [
+                                {
+                                    "value": "0 - -",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "organismo": [
+                                {
+                                    "value": "1 - Tesorer\u00eda General de la Rep\u00fablica - Efectivo",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "institucion": [
+                                {
+                                    "value": "60 - Secretar\u00eda de Salud",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "subPrograma": [
+                                {
+                                    "value": "0 - -",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "actividadObra": [
+                                {
+                                    "value": "5 - SERVICIOS ADMINISTRATIVOS Y CONTABLES",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "trfBeneficiario": [
+                                {
+                                    "value": "0",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "rationale": [
+                {
+                    "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                    "releaseTag": [
+                        "planning",
+                        "award",
+                        "contract",
+                        "implementation"
+                    ],
+                    "releaseDate": "2020-10-09T13:25:21Z"
+                }
+            ]
+        },
+        "contracts": [
+            {
+                "id": "C2020-60-1-4688-1",
+                "title": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "value": {
+                    "amount": [
+                        {
+                            "value": 905883.75,
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ],
+                    "currency": [
+                        {
+                            "value": "HNL",
+                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-09T13:25:21Z"
+                        }
+                    ]
+                },
+                "awardID": [
+                    {
+                        "value": "A2020-60-1-4688-1",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "description": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-09T13:25:21Z"
+                    }
+                ],
+                "implementation": {
+                    "transactions": [
+                        {
+                            "id": "T2020-449-1-TRB-373090",
+                            "uri": [
+                                {
+                                    "value": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/transacciones/T2020-449-1-TRB-373090",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "date": [
+                                {
+                                    "value": "2020-11-02T13:58:56Z",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "payee": {
+                                "id": [
+                                    {
+                                        "value": "HN-RTN-05019003081452",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ],
+                                "name": [
+                                    {
+                                        "value": "SERMUSA S. DE R.L./SERVICIOS MULTIPLES S. DE R.L.",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ]
+                            },
+                            "payer": {
+                                "id": [
+                                    {
+                                        "value": "HN-ENG-449",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ],
+                                "name": [
+                                    {
+                                        "value": "Servicios Financieros de la Administraci\u00f3n Central",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ]
+                            },
+                            "value": {
+                                "amount": [
+                                    {
+                                        "value": 787725.0,
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ],
+                                "currency": [
+                                    {
+                                        "value": "HNL",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ]
+                            },
+                            "budgetSources": [
+                                {
+                                    "value": [
+                                        "2020-60-1-53-1-0-0-5-11-1-23500-0"
+                                    ],
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "financialObligationIds": [
+                                {
+                                    "value": [
+                                        "D2020-60-1-4688-1-1-0"
+                                    ],
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ]
+                        }
+                    ],
+                    "financialObligations": [
+                        {
+                            "id": "D2020-60-1-4688-1-1-0",
+                            "bill": {
+                                "id": [
+                                    {
+                                        "value": "1791-2020-GA",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ],
+                                "date": [
+                                    {
+                                        "value": "2020-09-25T00:00:00Z",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ],
+                                "type": [
+                                    {
+                                        "value": "OFI",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ],
+                                "amount": {
+                                    "amount": [
+                                        {
+                                            "value": 905883.75,
+                                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                            "releaseTag": [
+                                                "planning",
+                                                "award",
+                                                "contract",
+                                                "implementation"
+                                            ],
+                                            "releaseDate": "2020-10-09T13:25:21Z"
+                                        }
+                                    ],
+                                    "currency": [
+                                        {
+                                            "value": "HNL",
+                                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                            "releaseTag": [
+                                                "planning",
+                                                "award",
+                                                "contract",
+                                                "implementation"
+                                            ],
+                                            "releaseDate": "2020-10-09T13:25:21Z"
+                                        }
+                                    ]
+                                },
+                                "description": [
+                                    {
+                                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                                        "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-09T13:25:21Z"
+                                    }
+                                ]
+                            },
+                            "retentions": [
+                                {
+                                    "name": [
+                                        {
+                                            "value": "IMPUESTO SOBRE VENTAS 15%",
+                                            "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                            "releaseTag": [
+                                                "planning",
+                                                "award",
+                                                "contract",
+                                                "implementation"
+                                            ],
+                                            "releaseDate": "2020-10-09T13:25:21Z"
+                                        }
+                                    ],
+                                    "amount": {
+                                        "amount": [
+                                            {
+                                                "value": 118158.75,
+                                                "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                                "releaseTag": [
+                                                    "planning",
+                                                    "award",
+                                                    "contract",
+                                                    "implementation"
+                                                ],
+                                                "releaseDate": "2020-10-09T13:25:21Z"
+                                            }
+                                        ],
+                                        "currency": [
+                                            {
+                                                "value": "HNL",
+                                                "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                                "releaseTag": [
+                                                    "planning",
+                                                    "award",
+                                                    "contract",
+                                                    "implementation"
+                                                ],
+                                                "releaseDate": "2020-10-09T13:25:21Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "description": [
+                                {
+                                    "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00002050 A FAVOR DE LA EMPRESA  SOCIEDAD SERVICIOS  MULTIPLES S DE RL (SERMUSA) EN CONCEPTO DE SERVICIOS DE LIMPIEZA E HIGIENIZACION Y MANEJO DE DESECHOS SOLIDOS INFECCIOSOS Y ESPECIALES  REALIZADOS A  NIVEL CENTRAL EDIFICIO PRINCIPAL EDIFICIO BANMA POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS  LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA CORRESPONDIENTE AL MES DE ABRIL 2020  SEGUN OFICIO N\u00b0 1791-2020-GA SEGUN RESOLUCION N\u00b0 164-2020-SS  ACUERDO N\u00b0 4140-2019 CONTRATO N\u00b0 10-2019-SS",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ],
+                            "approvalDate": [
+                                {
+                                    "value": "2020-10-09T13:25:21Z",
+                                    "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-09T13:25:21Z"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "initiationType": [
+            {
+                "value": "tender",
+                "releaseID": "P2020-60-1-4688-2020-10-09T13:25:21Z",
+                "releaseTag": [
+                    "planning",
+                    "award",
+                    "contract",
+                    "implementation"
+                ],
+                "releaseDate": "2020-10-09T13:25:21Z"
+            }
+        ]
+    }
+}

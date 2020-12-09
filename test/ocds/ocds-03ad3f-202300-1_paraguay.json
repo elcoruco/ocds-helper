@@ -1,0 +1,204 @@
+{
+    "compiledRelease": {
+        "tender": {
+            "procuringEntity": {
+                "name": "Ministerio de Salud P\u00fablica y Bienestar Social (MSPBS)",
+                "id": "DNCP-SICP-CODE-306"
+            },
+            "mainProcurementCategoryDetails": "Bienes - Equipos, Productos e instrumentales M\u00e9dicos y de Laboratorio. Servicios asistenciales de salud",
+            "statusDetails": "Adjudicada",
+            "id": "202300-adquisicion-medicamentos-insumos-reactivos-programa-nacional-lucha-vih-sid",
+            "title": "Adquisicion de Medicamentos, Insumos y Reactivos para el Programa Nacional de Lucha contra el VIH/SIDA",
+            "procurementMethodDetails": "Licitaci\u00f3n P\u00fablica Nacional",
+            "tenderPeriod": {
+                "durationInDays": 2,
+                "endDate": "2010-09-01T08:20:00-04:00",
+                "startDate": "2010-08-30T07:30:00-04:00"
+            }
+        },
+        "date": "2010-11-24T17:26:41-04:00",
+        "planning": {
+            "identifier": "202300"
+        },
+        "awards": [
+            {
+                "suppliers": [
+                    {
+                        "name": "COMPA\u00d1IA QUIMICA VICENTE SCAVONE SACI",
+                        "id": "PY-RUC-80001870-2"
+                    }
+                ],
+                "id": "202300-compania-quimica-vicente-scavone-saci-23"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "INDEX S.A.C.I.",
+                        "id": "PY-RUC-80002742-6"
+                    }
+                ],
+                "id": "202300-index-s-a-c-i-15"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "EXIMPAR S.R.L.",
+                        "id": "PY-RUC-80002596-2"
+                    }
+                ],
+                "id": "202300-eximpar-s-r-l-18"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "G T SCIENTIFIC S.A.",
+                        "id": "PY-RUC-80000084-6"
+                    }
+                ],
+                "id": "202300-g-t-scientific-s-a-13"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "CHACO INTERNACIONAL SA",
+                        "id": "PY-RUC-80026564-5"
+                    }
+                ],
+                "id": "202300-chaco-internacional-sa-21"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "MEDICINE S.A.",
+                        "id": "PY-RUC-80015176-3"
+                    }
+                ],
+                "id": "202300-medicine-sa-16"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "CASA BOLLER S.A.",
+                        "id": "PY-RUC-80001556-8"
+                    }
+                ],
+                "id": "202300-casa-boller-s-a-22"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "MEDOPHARM SA",
+                        "id": "PY-RUC-80027325-7"
+                    }
+                ],
+                "id": "202300-medopharm-sa-25"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "SIDUS S.A.",
+                        "id": "PY-RUC-80019632-5"
+                    }
+                ],
+                "id": "202300-sidus-s-a-17"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "IMPORTADORA EUROAMERICANA SA",
+                        "id": "PY-RUC-80025575-5"
+                    }
+                ],
+                "id": "202300-importadora-euroamericana-sa-24"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "ENDOTERAPIA SRL",
+                        "id": "PY-RUC-80028576-0"
+                    }
+                ],
+                "id": "202300-endoterapia-srl-14"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "INFOTEC SA",
+                        "id": "PY-RUC-80021897-3"
+                    }
+                ],
+                "id": "202300-infotec-sa-19"
+            },
+            {
+                "suppliers": [
+                    {
+                        "name": "GUAYAKI SA",
+                        "id": "PY-RUC-80014641-7"
+                    }
+                ],
+                "id": "202300-guayaki-sa-20"
+            }
+        ],
+        "contracts": [
+            {
+                "id": "LP-12008-10-15557"
+            },
+            {
+                "id": "LP-12008-10-15949"
+            },
+            {
+                "id": "LP-12008-10-15948"
+            },
+            {
+                "id": "LP-12008-10-15558"
+            },
+            {
+                "id": "LP-12008-10-15554"
+            },
+            {
+                "id": "LP-12008-10-15555"
+            },
+            {
+                "id": "LP-12008-10-15552"
+            },
+            {
+                "id": "LP-12008-10-15551"
+            },
+            {
+                "id": "LP-12008-10-15556"
+            },
+            {
+                "id": "LP-12008-10-15559"
+            },
+            {
+                "id": "LP-12008-10-15553"
+            },
+            {
+                "id": "LP-12008-10-16442"
+            },
+            {
+                "id": "LP-12008-10-16945"
+            }
+        ],
+        "ocid": "ocds-03ad3f-202300-1",
+        "buyer": {
+            "name": "Ministerio de Salud P\u00fablica y Bienestar Social (MSPBS)",
+            "id": "DNCP-SICP-CODE-306"
+        }
+    },
+    "ocid": "ocds-03ad3f-202300-1",
+    "releases": [
+        {
+            "date": "2010-11-24T17:26:41-04:00",
+            "tag": [
+                "planning",
+                "tender",
+                "tenderUpdate",
+                "award",
+                "contract",
+                "implementation"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/202300-adquisicion-medicamentos-insumos-reactivos-programa-nacional-lucha-vih-sid-1290619601"
+        }
+    ]
+}

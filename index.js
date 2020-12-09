@@ -13,6 +13,7 @@ const recordP  = require("./schemas/record-package.json");
 
 const RELEASE  = "release";
 const RELEASEP = "release package";
+const RECORD   = "record";
 const RECORDP  = "record Package";
 const LINKED_RELEASE   = "Linked Release";
 const EMBEDDED_RELEASE = "Embedded Release";
@@ -247,11 +248,13 @@ const getData = ocds => {
   if(type === RELEASE) return accesors.release(ocds);
   else if(type === RECORDP) return  accesors.recordPackage(ocds);
   else if(type === RELEASEP) return  accesors.releasePackage(ocds);
+  else if(type === RECORD) return  accesors.record(ocds);
   else return null;
 }
 
 const accesors = {
   release        : rel => rel,
+  record         : record => record.compiledRelease || record.releases[0],
   releasePackage : (rp, index) => {
     const releases = rp.releases;
     return index ? (releases[index] || null) : (releases.length === 1 ? releases[0] : releases); 
@@ -297,6 +300,7 @@ const accesors = {
 
 const jsonType = file => {
   if(typeof file !== "object" || file === null) return null;
+  if(file.ocid && file.releases) return RECORD;
   if(file.releases) return RELEASEP;
   if(file.records) return RECORDP;
   if(file.ocid) return RELEASE;

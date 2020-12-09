@@ -1,0 +1,128 @@
+{
+    "compiledRelease": {
+        "tender": {
+            "procuringEntity": {
+                "name": "Ministerio de Salud P\u00fablica y Bienestar Social (MSPBS)",
+                "id": "DNCP-SICP-CODE-306"
+            },
+            "mainProcurementCategoryDetails": "Bienes - Equipos, Productos e instrumentales M\u00e9dicos y de Laboratorio. Servicios asistenciales de salud",
+            "statusDetails": "En Convocatoria (Abierta)",
+            "id": "384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1",
+            "title": "ADQUISICION DE REACTIVOS PARA VIH/SIDA PARA EL LABORATORIO DE PRONASIDA - MSPBS",
+            "procurementMethodDetails": "Concurso de Ofertas",
+            "tenderPeriod": {
+                "durationInDays": 28,
+                "endDate": "2020-12-04T09:50:00-04:00",
+                "startDate": "2020-11-05T14:06:43-04:00"
+            }
+        },
+        "date": "2020-12-01T09:14:53-04:00",
+        "planning": {
+            "identifier": "384983"
+        },
+        "ocid": "ocds-03ad3f-384983-1",
+        "buyer": {
+            "name": "Ministerio de Salud P\u00fablica y Bienestar Social (MSPBS)",
+            "id": "DNCP-SICP-CODE-306"
+        }
+    },
+    "ocid": "ocds-03ad3f-384983-1",
+    "releases": [
+        {
+            "date": "2020-12-01T09:14:53-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1606814093"
+        },
+        {
+            "date": "2020-11-30T14:04:04-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1606745044"
+        },
+        {
+            "date": "2020-11-27T16:07:08-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1606493228"
+        },
+        {
+            "date": "2020-11-23T20:01:25-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1606161685"
+        },
+        {
+            "date": "2020-11-20T18:22:59-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1605896579"
+        },
+        {
+            "date": "2020-11-19T11:03:44-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1605783824"
+        },
+        {
+            "date": "2020-11-18T10:39:38-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1605695978"
+        },
+        {
+            "date": "2020-11-13T14:26:03-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1605277563"
+        },
+        {
+            "date": "2020-11-11T16:44:47-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1605113087"
+        },
+        {
+            "date": "2020-11-05T14:07:03-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-adquisicion-reactivos-vih-sida-laboratorio-pronasida-mspbs-1-1604585223"
+        },
+        {
+            "date": "2020-09-25T14:31:49-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-1601044309.97826"
+        },
+        {
+            "date": "2020-08-28T16:43:57-04:00",
+            "tag": [
+                "planning",
+                "tender"
+            ],
+            "url": "https://www.contrataciones.gov.py/datos/api/v3/doc/ocds/releases/id/384983-1598633037.27346"
+        }
+    ]
+}

@@ -1,0 +1,1593 @@
+{
+    "ocid": "ocds-lcuori-P2020-60-1-5136",
+    "releases": [
+        {
+            "id": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+            "tag": [
+                "planning",
+                "award",
+                "contract",
+                "implementation"
+            ],
+            "date": "2020-10-30T15:15:17Z",
+            "ocid": "ocds-lcuori-P2020-60-1-5136",
+            "buyer": {
+                "id": "HN-ENG-60",
+                "name": "Secretar\u00eda de Salud"
+            },
+            "awards": [
+                {
+                    "id": "A2020-60-1-5136-1",
+                    "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                    "value": {
+                        "amount": 1372525.0,
+                        "currency": "HNL"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "HN-RTN-13019995432895",
+                            "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V"
+                        }
+                    ],
+                    "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020"
+                }
+            ],
+            "parties": [
+                {
+                    "id": "HN-RTN-13019995432895",
+                    "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                    "roles": [
+                        "supplier"
+                    ],
+                    "address": {
+                        "region": "ND",
+                        "locality": "8",
+                        "postalCode": "ND",
+                        "countryName": "HN",
+                        "streetAddress": "EDIFICIO FLORENCIA CUBICULO 2"
+                    },
+                    "identifier": {
+                        "id": "HN-RTN-13019995432895",
+                        "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/proveedor/HN-RTN-13019995432895",
+                        "scheme": "HN-RTN",
+                        "legalName": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V"
+                    },
+                    "contactPoint": {
+                        "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                        "faxNumber": "ND",
+                        "telephone": "239-6124"
+                    }
+                },
+                {
+                    "id": "HN-ENG-60",
+                    "name": "Secretar\u00eda de Salud",
+                    "roles": [
+                        "buyer"
+                    ],
+                    "address": {
+                        "region": "ND",
+                        "locality": "8",
+                        "postalCode": "ND",
+                        "countryName": "HN",
+                        "streetAddress": "EDIFICIO PRINCIPAL, AVE. CERVANTES, 3ERA CALLE #1001"
+                    },
+                    "identifier": {
+                        "id": "60",
+                        "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/instituciones/institucion/60",
+                        "scheme": "HND-ENG",
+                        "legalName": "Secretar\u00eda de Salud"
+                    },
+                    "contactPoint": {
+                        "name": "Secretar\u00eda de Salud",
+                        "email": "gerenciasesal2013@gmail.com",
+                        "faxNumber": "2378158",
+                        "telephone": "222-5771"
+                    }
+                }
+            ],
+            "sources": [
+                {
+                    "id": "HN.SIAFI2",
+                    "url": "http://www.sefin.gob.hn",
+                    "name": "Sistema de Informacion Financiero Integrado v2.0"
+                }
+            ],
+            "language": "es",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 1372525.0,
+                        "currency": "HNL"
+                    },
+                    "budgetBreakdown": [
+                        {
+                            "id": "2020-60-1-53-1-0-0-5-11-1-29200-0",
+                            "measures": {
+                                "comprometido": 1372525.0,
+                                "precomprometido": 1372525.0,
+                                "ajusteComprometido": 0.0,
+                                "ajustePrecomprometido": 0.0
+                            },
+                            "classifications": {
+                                "ga": "1 - GERENCIA CENTRAL",
+                                "ue": "53 - GERENCIA ADMINISTRATIVA",
+                                "fuente": "11 - Tesoro Nacional",
+                                "objeto": "29200-Servicios de Vigilancia",
+                                "gestion": "2020",
+                                "programa": "1 - ACTIVIDADES CENTRALES",
+                                "proyecto": "0 - -",
+                                "organismo": "1 - Tesorer\u00eda General de la Rep\u00fablica - Efectivo",
+                                "institucion": "60 - Secretar\u00eda de Salud",
+                                "subPrograma": "0 - -",
+                                "actividadObra": "5 - SERVICIOS ADMINISTRATIVOS Y CONTABLES",
+                                "trfBeneficiario": "0"
+                            }
+                        }
+                    ]
+                },
+                "rationale": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020"
+            },
+            "contracts": [
+                {
+                    "id": "C2020-60-1-5136-1",
+                    "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                    "value": {
+                        "amount": 1372525.0,
+                        "currency": "HNL"
+                    },
+                    "awardID": "A2020-60-1-5136-1",
+                    "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                    "implementation": {
+                        "transactions": [
+                            {
+                                "id": "T2020-449-1-TRB-398489",
+                                "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/transacciones/T2020-449-1-TRB-398489",
+                                "date": "2020-11-27T14:04:14Z",
+                                "payee": {
+                                    "id": "HN-RTN-13019995432895",
+                                    "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V"
+                                },
+                                "payer": {
+                                    "id": "HN-ENG-449",
+                                    "name": "Servicios Financieros de la Administraci\u00f3n Central"
+                                },
+                                "value": {
+                                    "amount": 1193500.0,
+                                    "currency": "HNL"
+                                },
+                                "budgetSources": [
+                                    "2020-60-1-53-1-0-0-5-11-1-29200-0"
+                                ],
+                                "financialObligationIds": [
+                                    "D2020-60-1-5136-1-1-0"
+                                ]
+                            }
+                        ],
+                        "financialObligations": [
+                            {
+                                "id": "D2020-60-1-5136-1-1-0",
+                                "bill": {
+                                    "id": "1929-2020-GA",
+                                    "date": "2020-10-09T00:00:00Z",
+                                    "type": "OFI",
+                                    "amount": {
+                                        "amount": 1372525.0,
+                                        "currency": "HNL"
+                                    },
+                                    "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020"
+                                },
+                                "retentions": [
+                                    {
+                                        "name": "IMPUESTO SOBRE VENTAS 15%",
+                                        "amount": {
+                                            "amount": 179025.0,
+                                            "currency": "HNL"
+                                        }
+                                    }
+                                ],
+                                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                                "approvalDate": "2020-10-30T15:15:17Z"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "initiationType": "tender"
+        }
+    ],
+    "compiledRelease": {
+        "id": "ocds-lcuori-P2020-60-1-5136-2020-10-30T15:15:17Z",
+        "tag": [
+            "compiled"
+        ],
+        "date": "2020-10-30T15:15:17Z",
+        "ocid": "ocds-lcuori-P2020-60-1-5136",
+        "buyer": {
+            "id": "HN-ENG-60",
+            "name": "Secretar\u00eda de Salud"
+        },
+        "awards": [
+            {
+                "id": "A2020-60-1-5136-1",
+                "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                "value": {
+                    "amount": 1372525.0,
+                    "currency": "HNL"
+                },
+                "suppliers": [
+                    {
+                        "id": "HN-RTN-13019995432895",
+                        "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V"
+                    }
+                ],
+                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020"
+            }
+        ],
+        "parties": [
+            {
+                "id": "HN-RTN-13019995432895",
+                "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                "roles": [
+                    "supplier"
+                ],
+                "address": {
+                    "region": "ND",
+                    "locality": "8",
+                    "postalCode": "ND",
+                    "countryName": "HN",
+                    "streetAddress": "EDIFICIO FLORENCIA CUBICULO 2"
+                },
+                "identifier": {
+                    "id": "HN-RTN-13019995432895",
+                    "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/proveedor/HN-RTN-13019995432895",
+                    "scheme": "HN-RTN",
+                    "legalName": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V"
+                },
+                "contactPoint": {
+                    "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                    "faxNumber": "ND",
+                    "telephone": "239-6124"
+                }
+            },
+            {
+                "id": "HN-ENG-60",
+                "name": "Secretar\u00eda de Salud",
+                "roles": [
+                    "buyer"
+                ],
+                "address": {
+                    "region": "ND",
+                    "locality": "8",
+                    "postalCode": "ND",
+                    "countryName": "HN",
+                    "streetAddress": "EDIFICIO PRINCIPAL, AVE. CERVANTES, 3ERA CALLE #1001"
+                },
+                "identifier": {
+                    "id": "60",
+                    "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/instituciones/institucion/60",
+                    "scheme": "HND-ENG",
+                    "legalName": "Secretar\u00eda de Salud"
+                },
+                "contactPoint": {
+                    "name": "Secretar\u00eda de Salud",
+                    "email": "gerenciasesal2013@gmail.com",
+                    "faxNumber": "2378158",
+                    "telephone": "222-5771"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "id": "HN.SIAFI2",
+                "url": "http://www.sefin.gob.hn",
+                "name": "Sistema de Informacion Financiero Integrado v2.0"
+            }
+        ],
+        "language": "es",
+        "planning": {
+            "budget": {
+                "amount": {
+                    "amount": 1372525.0,
+                    "currency": "HNL"
+                },
+                "budgetBreakdown": [
+                    {
+                        "id": "2020-60-1-53-1-0-0-5-11-1-29200-0",
+                        "measures": {
+                            "comprometido": 1372525.0,
+                            "precomprometido": 1372525.0,
+                            "ajusteComprometido": 0.0,
+                            "ajustePrecomprometido": 0.0
+                        },
+                        "classifications": {
+                            "ga": "1 - GERENCIA CENTRAL",
+                            "ue": "53 - GERENCIA ADMINISTRATIVA",
+                            "fuente": "11 - Tesoro Nacional",
+                            "objeto": "29200-Servicios de Vigilancia",
+                            "gestion": "2020",
+                            "programa": "1 - ACTIVIDADES CENTRALES",
+                            "proyecto": "0 - -",
+                            "organismo": "1 - Tesorer\u00eda General de la Rep\u00fablica - Efectivo",
+                            "institucion": "60 - Secretar\u00eda de Salud",
+                            "subPrograma": "0 - -",
+                            "actividadObra": "5 - SERVICIOS ADMINISTRATIVOS Y CONTABLES",
+                            "trfBeneficiario": "0"
+                        }
+                    }
+                ]
+            },
+            "rationale": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020"
+        },
+        "contracts": [
+            {
+                "id": "C2020-60-1-5136-1",
+                "title": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                "value": {
+                    "amount": 1372525.0,
+                    "currency": "HNL"
+                },
+                "awardID": "A2020-60-1-5136-1",
+                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                "implementation": {
+                    "transactions": [
+                        {
+                            "id": "T2020-449-1-TRB-398489",
+                            "uri": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/transacciones/T2020-449-1-TRB-398489",
+                            "date": "2020-11-27T14:04:14Z",
+                            "payee": {
+                                "id": "HN-RTN-13019995432895",
+                                "name": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V"
+                            },
+                            "payer": {
+                                "id": "HN-ENG-449",
+                                "name": "Servicios Financieros de la Administraci\u00f3n Central"
+                            },
+                            "value": {
+                                "amount": 1193500.0,
+                                "currency": "HNL"
+                            },
+                            "budgetSources": [
+                                "2020-60-1-53-1-0-0-5-11-1-29200-0"
+                            ],
+                            "financialObligationIds": [
+                                "D2020-60-1-5136-1-1-0"
+                            ]
+                        }
+                    ],
+                    "financialObligations": [
+                        {
+                            "id": "D2020-60-1-5136-1-1-0",
+                            "bill": {
+                                "id": "1929-2020-GA",
+                                "date": "2020-10-09T00:00:00Z",
+                                "type": "OFI",
+                                "amount": {
+                                    "amount": 1372525.0,
+                                    "currency": "HNL"
+                                },
+                                "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020"
+                            },
+                            "retentions": [
+                                {
+                                    "name": "IMPUESTO SOBRE VENTAS 15%",
+                                    "amount": {
+                                        "amount": 179025.0,
+                                        "currency": "HNL"
+                                    }
+                                }
+                            ],
+                            "description": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                            "approvalDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "initiationType": "tender"
+    },
+    "versionedRelease": {
+        "ocid": "ocds-lcuori-P2020-60-1-5136",
+        "buyer": {
+            "id": [
+                {
+                    "value": "HN-ENG-60",
+                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                    "releaseTag": [
+                        "planning",
+                        "award",
+                        "contract",
+                        "implementation"
+                    ],
+                    "releaseDate": "2020-10-30T15:15:17Z"
+                }
+            ],
+            "name": [
+                {
+                    "value": "Secretar\u00eda de Salud",
+                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                    "releaseTag": [
+                        "planning",
+                        "award",
+                        "contract",
+                        "implementation"
+                    ],
+                    "releaseDate": "2020-10-30T15:15:17Z"
+                }
+            ]
+        },
+        "awards": [
+            {
+                "id": "A2020-60-1-5136-1",
+                "title": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "value": {
+                    "amount": [
+                        {
+                            "value": 1372525.0,
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "currency": [
+                        {
+                            "value": "HNL",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "suppliers": [
+                    {
+                        "id": "HN-RTN-13019995432895",
+                        "name": [
+                            {
+                                "value": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                                "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                "releaseTag": [
+                                    "planning",
+                                    "award",
+                                    "contract",
+                                    "implementation"
+                                ],
+                                "releaseDate": "2020-10-30T15:15:17Z"
+                            }
+                        ]
+                    }
+                ],
+                "description": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ]
+            }
+        ],
+        "parties": [
+            {
+                "id": "HN-RTN-13019995432895",
+                "name": [
+                    {
+                        "value": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "roles": [
+                    {
+                        "value": [
+                            "supplier"
+                        ],
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "address": {
+                    "region": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "locality": [
+                        {
+                            "value": "8",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "postalCode": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "countryName": [
+                        {
+                            "value": "HN",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "streetAddress": [
+                        {
+                            "value": "EDIFICIO FLORENCIA CUBICULO 2",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "identifier": {
+                    "id": [
+                        {
+                            "value": "HN-RTN-13019995432895",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "uri": [
+                        {
+                            "value": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/proveedor/HN-RTN-13019995432895",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "scheme": [
+                        {
+                            "value": "HN-RTN",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "legalName": [
+                        {
+                            "value": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "contactPoint": {
+                    "name": [
+                        {
+                            "value": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "faxNumber": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "telephone": [
+                        {
+                            "value": "239-6124",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "HN-ENG-60",
+                "name": [
+                    {
+                        "value": "Secretar\u00eda de Salud",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "roles": [
+                    {
+                        "value": [
+                            "buyer"
+                        ],
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "address": {
+                    "region": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "locality": [
+                        {
+                            "value": "8",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "postalCode": [
+                        {
+                            "value": "ND",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "countryName": [
+                        {
+                            "value": "HN",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "streetAddress": [
+                        {
+                            "value": "EDIFICIO PRINCIPAL, AVE. CERVANTES, 3ERA CALLE #1001",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "identifier": {
+                    "id": [
+                        {
+                            "value": "60",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "uri": [
+                        {
+                            "value": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/datosabiertos/api/v1/instituciones/institucion/60",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "scheme": [
+                        {
+                            "value": "HND-ENG",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "legalName": [
+                        {
+                            "value": "Secretar\u00eda de Salud",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "contactPoint": {
+                    "name": [
+                        {
+                            "value": "Secretar\u00eda de Salud",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "email": [
+                        {
+                            "value": "gerenciasesal2013@gmail.com",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "faxNumber": [
+                        {
+                            "value": "2378158",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "telephone": [
+                        {
+                            "value": "222-5771",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "sources": [
+            {
+                "id": "HN.SIAFI2",
+                "url": [
+                    {
+                        "value": "http://www.sefin.gob.hn",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "name": [
+                    {
+                        "value": "Sistema de Informacion Financiero Integrado v2.0",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ]
+            }
+        ],
+        "language": [
+            {
+                "value": "es",
+                "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                "releaseTag": [
+                    "planning",
+                    "award",
+                    "contract",
+                    "implementation"
+                ],
+                "releaseDate": "2020-10-30T15:15:17Z"
+            }
+        ],
+        "planning": {
+            "budget": {
+                "amount": {
+                    "amount": [
+                        {
+                            "value": 1372525.0,
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "currency": [
+                        {
+                            "value": "HNL",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "budgetBreakdown": [
+                    {
+                        "id": "2020-60-1-53-1-0-0-5-11-1-29200-0",
+                        "measures": {
+                            "comprometido": [
+                                {
+                                    "value": 1372525.0,
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "precomprometido": [
+                                {
+                                    "value": 1372525.0,
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "ajusteComprometido": [
+                                {
+                                    "value": 0.0,
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "ajustePrecomprometido": [
+                                {
+                                    "value": 0.0,
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ]
+                        },
+                        "classifications": {
+                            "ga": [
+                                {
+                                    "value": "1 - GERENCIA CENTRAL",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "ue": [
+                                {
+                                    "value": "53 - GERENCIA ADMINISTRATIVA",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "fuente": [
+                                {
+                                    "value": "11 - Tesoro Nacional",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "objeto": [
+                                {
+                                    "value": "29200-Servicios de Vigilancia",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "gestion": [
+                                {
+                                    "value": "2020",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "programa": [
+                                {
+                                    "value": "1 - ACTIVIDADES CENTRALES",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "proyecto": [
+                                {
+                                    "value": "0 - -",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "organismo": [
+                                {
+                                    "value": "1 - Tesorer\u00eda General de la Rep\u00fablica - Efectivo",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "institucion": [
+                                {
+                                    "value": "60 - Secretar\u00eda de Salud",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "subPrograma": [
+                                {
+                                    "value": "0 - -",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "actividadObra": [
+                                {
+                                    "value": "5 - SERVICIOS ADMINISTRATIVOS Y CONTABLES",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "trfBeneficiario": [
+                                {
+                                    "value": "0",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "rationale": [
+                {
+                    "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                    "releaseTag": [
+                        "planning",
+                        "award",
+                        "contract",
+                        "implementation"
+                    ],
+                    "releaseDate": "2020-10-30T15:15:17Z"
+                }
+            ]
+        },
+        "contracts": [
+            {
+                "id": "C2020-60-1-5136-1",
+                "title": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "value": {
+                    "amount": [
+                        {
+                            "value": 1372525.0,
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ],
+                    "currency": [
+                        {
+                            "value": "HNL",
+                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                            "releaseTag": [
+                                "planning",
+                                "award",
+                                "contract",
+                                "implementation"
+                            ],
+                            "releaseDate": "2020-10-30T15:15:17Z"
+                        }
+                    ]
+                },
+                "awardID": [
+                    {
+                        "value": "A2020-60-1-5136-1",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "description": [
+                    {
+                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                        "releaseTag": [
+                            "planning",
+                            "award",
+                            "contract",
+                            "implementation"
+                        ],
+                        "releaseDate": "2020-10-30T15:15:17Z"
+                    }
+                ],
+                "implementation": {
+                    "transactions": [
+                        {
+                            "id": "T2020-449-1-TRB-398489",
+                            "uri": [
+                                {
+                                    "value": "https://guancasco.sefin.gob.hn/EDCA_WEBAPI/transacciones/T2020-449-1-TRB-398489",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "date": [
+                                {
+                                    "value": "2020-11-27T14:04:14Z",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "payee": {
+                                "id": [
+                                    {
+                                        "value": "HN-RTN-13019995432895",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ],
+                                "name": [
+                                    {
+                                        "value": "SERV DE SEGURIDAD LEMPIRA S.DE R.L DE C.V",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ]
+                            },
+                            "payer": {
+                                "id": [
+                                    {
+                                        "value": "HN-ENG-449",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ],
+                                "name": [
+                                    {
+                                        "value": "Servicios Financieros de la Administraci\u00f3n Central",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ]
+                            },
+                            "value": {
+                                "amount": [
+                                    {
+                                        "value": 1193500.0,
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ],
+                                "currency": [
+                                    {
+                                        "value": "HNL",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ]
+                            },
+                            "budgetSources": [
+                                {
+                                    "value": [
+                                        "2020-60-1-53-1-0-0-5-11-1-29200-0"
+                                    ],
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "financialObligationIds": [
+                                {
+                                    "value": [
+                                        "D2020-60-1-5136-1-1-0"
+                                    ],
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ]
+                        }
+                    ],
+                    "financialObligations": [
+                        {
+                            "id": "D2020-60-1-5136-1-1-0",
+                            "bill": {
+                                "id": [
+                                    {
+                                        "value": "1929-2020-GA",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ],
+                                "date": [
+                                    {
+                                        "value": "2020-10-09T00:00:00Z",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ],
+                                "type": [
+                                    {
+                                        "value": "OFI",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ],
+                                "amount": {
+                                    "amount": [
+                                        {
+                                            "value": 1372525.0,
+                                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                            "releaseTag": [
+                                                "planning",
+                                                "award",
+                                                "contract",
+                                                "implementation"
+                                            ],
+                                            "releaseDate": "2020-10-30T15:15:17Z"
+                                        }
+                                    ],
+                                    "currency": [
+                                        {
+                                            "value": "HNL",
+                                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                            "releaseTag": [
+                                                "planning",
+                                                "award",
+                                                "contract",
+                                                "implementation"
+                                            ],
+                                            "releaseDate": "2020-10-30T15:15:17Z"
+                                        }
+                                    ]
+                                },
+                                "description": [
+                                    {
+                                        "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                                        "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                        "releaseTag": [
+                                            "planning",
+                                            "award",
+                                            "contract",
+                                            "implementation"
+                                        ],
+                                        "releaseDate": "2020-10-30T15:15:17Z"
+                                    }
+                                ]
+                            },
+                            "retentions": [
+                                {
+                                    "name": [
+                                        {
+                                            "value": "IMPUESTO SOBRE VENTAS 15%",
+                                            "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                            "releaseTag": [
+                                                "planning",
+                                                "award",
+                                                "contract",
+                                                "implementation"
+                                            ],
+                                            "releaseDate": "2020-10-30T15:15:17Z"
+                                        }
+                                    ],
+                                    "amount": {
+                                        "amount": [
+                                            {
+                                                "value": 179025.0,
+                                                "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                                "releaseTag": [
+                                                    "planning",
+                                                    "award",
+                                                    "contract",
+                                                    "implementation"
+                                                ],
+                                                "releaseDate": "2020-10-30T15:15:17Z"
+                                            }
+                                        ],
+                                        "currency": [
+                                            {
+                                                "value": "HNL",
+                                                "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                                "releaseTag": [
+                                                    "planning",
+                                                    "award",
+                                                    "contract",
+                                                    "implementation"
+                                                ],
+                                                "releaseDate": "2020-10-30T15:15:17Z"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "description": [
+                                {
+                                    "value": "CANCELACION DE LA FACTURA N\u00b0 000-001-01-00005105   A  FAVOR DE LA EMPRESA SERVICIOS DE SEGURIDAD LEMPIRA S. DE R.L. DE C.V. POR PRESTACION DE SERVICIOS DE SEGURIDAD VIGILANCIA A LAS INSTALACIONES DE LA SECRETARIA DE SALUD NIVEL CENTRAL (EDIFICIO PRINCIPAL) EDIFICIO BANMA 1 Y 2 POOL DE VEHICULOS ALMACEN CENTRAL DE MEDICAMENTOS CENTRO DE SALUD ALONZO SUAZO BODEGAS EL GUANABANO LABORATORIO DE VIROLOGIA Y LABORATORIO DE SIDA HOSPITAL MARIO MENDOZA OFICINAS DEL CORREO NACIONAL BODEGA SANTA ANA BODEGA OJO DE AGUA BODEGA DE TALANGA CORREPONDIENTE AL MES DE SEPTIEMBRE 2020 CON OFICIO DE AUTORIZACION No. 1929-2020-GA DE FECHA: 09-10-2020 MEDIANTE RESOLUCION No. 202-2020-SS DEL 20  DE OCTUBRE DEL 2020",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ],
+                            "approvalDate": [
+                                {
+                                    "value": "2020-10-30T15:15:17Z",
+                                    "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                                    "releaseTag": [
+                                        "planning",
+                                        "award",
+                                        "contract",
+                                        "implementation"
+                                    ],
+                                    "releaseDate": "2020-10-30T15:15:17Z"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "initiationType": [
+            {
+                "value": "tender",
+                "releaseID": "P2020-60-1-5136-2020-10-30T15:15:17Z",
+                "releaseTag": [
+                    "planning",
+                    "award",
+                    "contract",
+                    "implementation"
+                ],
+                "releaseDate": "2020-10-30T15:15:17Z"
+            }
+        ]
+    }
+}

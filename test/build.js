@@ -14,6 +14,7 @@ const recordP  = require("./schemas/record-package.json");
 
 const RELEASE  = "release";
 const RELEASEP = "release package";
+const RECORD   = "record";
 const RECORDP  = "record Package";
 const LINKED_RELEASE   = "Linked Release";
 const EMBEDDED_RELEASE = "Embedded Release";
@@ -175,6 +176,9 @@ const propertyAccesor = (prop, ref, condition) => {
       if(condition.type === "contains"){
         return item[condition.field].indexOf(condition.value) !== -1;
       }
+      else if(condition.type === "equals"){
+        return item[condition.field] == condition.value;
+      }
       else{
         return;
       }
@@ -245,11 +249,13 @@ const getData = ocds => {
   if(type === RELEASE) return accesors.release(ocds);
   else if(type === RECORDP) return  accesors.recordPackage(ocds);
   else if(type === RELEASEP) return  accesors.releasePackage(ocds);
+  else if(type === RECORD) return  accesors.record(ocds);
   else return null;
 }
 
 const accesors = {
   release        : rel => rel,
+  record         : record => record.compiledRelease || record.releases[0],
   releasePackage : (rp, index) => {
     const releases = rp.releases;
     return index ? (releases[index] || null) : (releases.length === 1 ? releases[0] : releases); 
@@ -295,6 +301,7 @@ const accesors = {
 
 const jsonType = file => {
   if(typeof file !== "object" || file === null) return null;
+  if(file.ocid && file.releases) return RECORD;
   if(file.releases) return RELEASEP;
   if(file.records) return RECORDP;
   if(file.ocid) return RELEASE;
@@ -4465,17 +4472,16 @@ const axios    = require("axios");
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 
 // test secop release 1
-// axios.get("/ocds/secop-release_1.json").then(res => {
-//   const helper = readOCDS(res.data)
-//   console.log("secop:", helper, helper.ocds);
-//   console.log("secop:", helper, helper.ocds);
-//   console.log("secop planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
-//   console.log("secop tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
-//   console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
-//   console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
-//   console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+axios.get("/ocds/secop-release_1.json").then(res => {
+  const helper = readOCDS(res.data)
+  console.log("secop:", helper, helper.ocds);
+  console.log("secop planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
+  console.log("secop tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
+  console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
+  console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
+  console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
 
-// });
+});
 
 
 // test inai record package 1
@@ -4502,6 +4508,28 @@ axios.get("/ocds/inai-record-package_1.json").then(res => {
 //   console.log("shcp contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
 //   console.log("shcp implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
 // });
+
+// test paraguay record 1
+axios.get("/ocds/ocds-03ad3f-202300-1_paraguay.json").then(res => {
+  const helper = readOCDS(res.data);
+  console.log("paraguay:", helper, helper.ocds);
+  console.log("paraguay planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
+  console.log("paraguay tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
+  console.log("paraguay award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
+  console.log("paraguay contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
+  console.log("paraguay implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+});
+
+// test honduras record 1
+axios.get("/ocds/ocds-lcuori-P2020-60-1-5136_honduras.json").then(res => {
+  const helper = readOCDS(res.data);
+  console.log("honduras:", helper, helper.ocds);
+  console.log("honduras planning amount:", helper.getStateAmount(helper.constants.states.PLANNING) )
+  console.log("honduras tender amount:", helper.getStateAmount(helper.constants.states.TENDER) )
+  console.log("honduras award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
+  console.log("honduras contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
+  console.log("honduras implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+});
 
 },{"../index":1,"axios":2}],32:[function(require,module,exports){
 // shim for using process in browser
