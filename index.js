@@ -64,6 +64,9 @@ const createOCDSHelper = ocds => {
         IMPLEMENTATION,
         FAIL 
       }
+    },
+    indices : {
+      hasSupplier : hasSupplier(data)
     }
   }
 }
@@ -71,7 +74,7 @@ const createOCDSHelper = ocds => {
 /*
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 /
-/  define los métodos del plugin
+/  define los métodos generales del plugin
 /
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 */
@@ -188,6 +191,18 @@ const propertyAccesor = (prop, ref, condition) => {
 
 
 
+}
+
+/*
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/
+/  define los métodos de indicadores del plugin
+/
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+*/
+const hasSupplier = rel => {
+  const suppliers = propertyAccesor("parties", rel, {type : "contains", field : "roles", value : "supplier"});
+  return suppliers ? true : false;
 }
 
 /*

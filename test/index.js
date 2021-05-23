@@ -2,6 +2,7 @@ const readOCDS = require("../index");
 const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
+// I'm using beefy index.js:build.js  --live
 
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
@@ -12,6 +13,7 @@ axios.get("/ocds/secop-release_1.json").then(res => {
   console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("secop contract has supplier:", helper.indices.hasSupplier )
 
 });
 
@@ -26,6 +28,7 @@ axios.get("/ocds/inai-record-package_1.json").then(res => {
   console.log("inai contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("inai implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
   console.log("inai buyer", helper.getData("parties", {type : "contains", field : "roles", value : "supplier"}) );
+  console.log("inai contract has supplier:", helper.indices.hasSupplier )
 });
 
 
@@ -50,6 +53,7 @@ axios.get("/ocds/ocds-03ad3f-202300-1_paraguay.json").then(res => {
   console.log("paraguay award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("paraguay contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("paraguay implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("paraguay contract has supplier:", helper.indices.hasSupplier )
 });
 
 // test honduras record 1
@@ -61,4 +65,5 @@ axios.get("/ocds/ocds-lcuori-P2020-60-1-5136_honduras.json").then(res => {
   console.log("honduras award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("honduras contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("honduras implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("honduras contract has supplier:", helper.indices.hasSupplier )
 });

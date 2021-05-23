@@ -65,6 +65,9 @@ const createOCDSHelper = ocds => {
         IMPLEMENTATION,
         FAIL 
       }
+    },
+    indices : {
+      hasSupplier : hasSupplier(data)
     }
   }
 }
@@ -72,7 +75,7 @@ const createOCDSHelper = ocds => {
 /*
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 /
-/  define los métodos del plugin
+/  define los métodos generales del plugin
 /
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 */
@@ -189,6 +192,18 @@ const propertyAccesor = (prop, ref, condition) => {
 
 
 
+}
+
+/*
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/
+/  define los métodos de indicadores del plugin
+/
+/  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+*/
+const hasSupplier = rel => {
+  const suppliers = propertyAccesor("parties", rel, {type : "contains", field : "roles", value : "supplier"});
+  return suppliers ? true : false;
 }
 
 /*
@@ -4470,6 +4485,7 @@ const readOCDS = require("../index");
 const axios    = require("axios");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
+// I'm using watchify: index.js -o build.js
 
 // test secop release 1
 axios.get("/ocds/secop-release_1.json").then(res => {
@@ -4480,6 +4496,7 @@ axios.get("/ocds/secop-release_1.json").then(res => {
   console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("secop contract has provider:", helper.indices.hasSupplier )
 
 });
 
@@ -4494,6 +4511,7 @@ axios.get("/ocds/inai-record-package_1.json").then(res => {
   console.log("inai contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("inai implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
   console.log("inai buyer", helper.getData("parties", {type : "contains", field : "roles", value : "supplier"}) );
+  console.log("secop contract has provider:", helper.indices.hasSupplier )
 });
 
 
@@ -4518,6 +4536,8 @@ axios.get("/ocds/ocds-03ad3f-202300-1_paraguay.json").then(res => {
   console.log("paraguay award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("paraguay contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("paraguay implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("secop contract has provider:", helper.indices.hasSupplier )
+  console.log("hola amigos");
 });
 
 // test honduras record 1
@@ -4529,6 +4549,7 @@ axios.get("/ocds/ocds-lcuori-P2020-60-1-5136_honduras.json").then(res => {
   console.log("honduras award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("honduras contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("honduras implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
+  console.log("secop contract has provider:", helper.indices.hasSupplier )
 });
 
 },{"../index":1,"axios":2}],32:[function(require,module,exports){
