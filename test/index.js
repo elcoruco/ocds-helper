@@ -13,8 +13,11 @@ axios.get("/ocds/secop-release_1.json").then(res => {
   console.log("secop award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("secop contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("secop implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
-  console.log("secop contract has supplier:", helper.indices.hasSupplier )
-
+  console.log("secop contract has supplier:", helper.indices.hasSupplier() )
+  console.log("secop contract has items:", helper.indices.hasItems() )
+  console.log("secop contract was competitive:", helper.indices.isCompetitive() )
+  console.log("secop contract / award difference:", helper.indices.awardContractDiff() )
+  console.log("secop tender days:", helper.indices.tenderPeriodDays() )
 });
 
 
@@ -28,7 +31,11 @@ axios.get("/ocds/inai-record-package_1.json").then(res => {
   console.log("inai contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("inai implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
   console.log("inai buyer", helper.getData("parties", {type : "contains", field : "roles", value : "supplier"}) );
-  console.log("inai contract has supplier:", helper.indices.hasSupplier )
+  console.log("inai contract has supplier:", helper.indices.hasSupplier() )
+  console.log("inai contract has items:", helper.indices.hasItems() )
+  console.log("inai contract was competitive:", helper.indices.isCompetitive() )
+  console.log("inai contract / award difference:", helper.indices.awardContractDiff() )
+  console.log("inai tender days:", helper.indices.tenderPeriodDays() )
 });
 
 
@@ -53,7 +60,11 @@ axios.get("/ocds/ocds-03ad3f-202300-1_paraguay.json").then(res => {
   console.log("paraguay award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("paraguay contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("paraguay implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
-  console.log("paraguay contract has supplier:", helper.indices.hasSupplier )
+  console.log("paraguay contract has supplier:", helper.indices.hasSupplier() )
+  console.log("paraguay contract has items:", helper.indices.hasItems() )
+  console.log("paraguay contract was competitive:", helper.indices.isCompetitive() )
+  console.log("paraguay contract / award difference:", helper.indices.awardContractDiff() )
+  console.log("paraguay tender days:", helper.indices.tenderPeriodDays() )
 });
 
 // test honduras record 1
@@ -65,5 +76,9 @@ axios.get("/ocds/ocds-lcuori-P2020-60-1-5136_honduras.json").then(res => {
   console.log("honduras award amount:", helper.getStateAmount(helper.constants.states.AWARD) )
   console.log("honduras contract amount:", helper.getStateAmount(helper.constants.states.CONTRACT) )
   console.log("honduras implementation amount:", helper.getStateAmount(helper.constants.states.IMPLEMENTATION) )
-  console.log("honduras contract has supplier:", helper.indices.hasSupplier )
+  console.log("honduras contract has supplier:", helper.indices.hasSupplier() )
+  console.log("honduras contract has items:", helper.indices.hasItems() )
+  console.log("honduras contract was competitive:", helper.indices.isCompetitive() )
+  console.log("honduras contract / award difference:", helper.indices.awardContractDiff() )
+  console.log("honduras tender days:", helper.indices.tenderPeriodDays() )
 });

@@ -66,7 +66,11 @@ const createOCDSHelper = ocds => {
       }
     },
     indices : {
-      hasSupplier : hasSupplier(data)
+      hasSupplier       : () => hasSupplier(data),
+      hasItems          : () => hasItems(data),
+      isCompetitive     : () => isCompetitive(data),
+      awardContractDiff : () => awardContractDiff(data),
+      tenderPeriodDays  : () => tenderPeriodDays(data)
     }
   }
 }
@@ -203,6 +207,59 @@ const propertyAccesor = (prop, ref, condition) => {
 const hasSupplier = rel => {
   const suppliers = propertyAccesor("parties", rel, {type : "contains", field : "roles", value : "supplier"});
   return suppliers ? true : false;
+}
+
+const hasItems = rel => {
+  const tenderItems = propertyAccesor("tender.items", rel);
+  const awardsItems = propertyAccesor("awards.items", rel);
+  const contractsItems = propertyAccesor("contracts.items", rel);
+  return tenderItems || awardsItems || contractsItems ? true : false;
+}
+
+const isCompetitive = rel => {
+  const type = propertyAccesor("tender.procurementMethod", rel);
+
+  console.log("type:", type);
+  if(!type){
+    return FAIL; 
+  }
+  else if(type.toLowerCase() == "direct"){
+    return false;
+  }
+  else{
+    return true;
+  }
+}
+
+const awardContractDiff = rel => {
+  const awardAmount = getAmount(AWARD, rel);
+  const contractAmount = getAmount(CONTRACT, rel);
+  let amount, percent;
+
+  if(!awardAmount || !contractAmount) return FAIL;
+  if(awardAmount.data.currency != contractAmount.data.currency) return FAIL;
+  if(!awardAmount.data.amount || !contractAmount.data.amount) return FAIL;
+
+  amount = +contractAmount.data.amount - +awardAmount.data.amount;
+  percent = amount / +awardAmount.data.amount;
+
+  return {amount, percent};
+}
+
+const tenderPeriodDays = rel => {
+  const tenderPeriod = propertyAccesor("tender.tenderPeriod", rel);
+  let from, to, diff, days;
+
+  if(!tenderPeriod) return FAIL;
+  if(!tenderPeriod.startDate) return FAIL;
+  if(!tenderPeriod.endDate) return FAIL;
+
+  from = new Date(tenderPeriod.startDate);
+  to = new Date(tenderPeriod.endDate);
+  diff = to.getTime() - from.getTime();
+  days = Math.ceil( diff / (1000*60*60*24)  )
+
+  return days;
 }
 
 /*
