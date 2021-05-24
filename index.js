@@ -219,7 +219,6 @@ const hasItems = rel => {
 const isCompetitive = rel => {
   const type = propertyAccesor("tender.procurementMethod", rel);
 
-  console.log("type:", type);
   if(!type){
     return FAIL; 
   }
