@@ -44,7 +44,7 @@ const createOCDSHelper = ocds => {
   const type     = jsonType(ocds);
   const data     = getData(ocds);
   const state    =  getState(data);
-  const daysDiff = getDiffDays(data.date);
+  const daysDiff = getDiffDays(data ? data.date : null);
   const amount   = getAmount(state, data)
   return {
     ocds,

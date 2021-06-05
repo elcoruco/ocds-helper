@@ -24,14 +24,7 @@ test('access ocid from SIAFI2 (Honduras) record with getData', () => {
   expect( helper.getData("ocid") ).toBe('ocds-lcuori-P2020-60-1-5136')
 })
 
-test('access ocid from MSPBS (Paraguay) non standard json with getData', () => {
+test('access ocid from MSPBS (Paraguay) record with getData', () => {
   const helper = readOCDS(MSPBS)
   expect( helper.getData("ocid") ).toBe('ocds-03ad3f-202300-1')
-})
-
-
-// TEST the ocds type function
-test('check the ocds type from MSPBS (Paraguay)', () => {
-  const helper = readOCDS(MSPBS)
-  expect( helper.type ).toBe('record')
 })
