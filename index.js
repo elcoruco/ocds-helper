@@ -7,9 +7,9 @@
 */
 const reducer  = (accumulator, currentValue) => accumulator + currentValue;
 
-const release  = require("./schemas/release.json");
-const releaseP = require("./schemas/release-package.json");
-const recordP  = require("./schemas/record-package.json");
+// const release  = require("./schemas/release.json");
+// const releaseP = require("./schemas/release-package.json");
+// const recordP  = require("./schemas/record-package.json");
 
 const RELEASE  = "release";
 const RELEASEP = "release package";
@@ -27,11 +27,11 @@ const IMPLEMENTATION = "implementation";
 const FAIL = null;
 
 
-const ocdsSchemas = {
-  release,
-  releaseP,
-  recordP
-}
+// const ocdsSchemas = {
+//   release,
+//   releaseP,
+//   recordP
+// }
 
 /*
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
