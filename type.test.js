@@ -21,6 +21,11 @@ test('check the ocds type from INAI (Mexico)', () => {
   expect( helper.type ).toBe('record Package')
 })
 
+test('check the ocds type from ocdsSIAFI2 (Honduras)', () => {
+  const helper = readOCDS(ocdsSIAFI2)
+  expect( helper.type ).toBe('record')
+})
+
 test('check the ocds type from MSPBS (Paraguay)', () => {
   const helper = readOCDS(MSPBS)
   expect( helper.type ).toBe('record')
