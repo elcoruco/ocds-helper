@@ -4,7 +4,7 @@
   "description": "read ocds files and get stats, values and some practical functions",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest  --verbose"
   },
   "author": "boris@gobiernofacil.com",
   "license": "CC-BY-4.0",

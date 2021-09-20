@@ -1,0 +1,237 @@
+{
+  "uri": "https:\/\/portal.compraspublicas.gob.ec\/sercop\/datos_abiertos\/",
+  "license": "https:\/\/creativecommons.org\/licenses\/by\/3.0\/ec\/",
+  "version": "1.1",
+  "releases": [
+    {
+      "id": "REAJ-AAG-001-2021-27611-2021-09-19T00:09:26.723Z",
+      "tag": [
+        "planning",
+        "tender",
+        "award",
+        "contract",
+        "implementation"
+      ],
+      "date": "2021-03-15T00:00:00-05:00",
+      "ocid": "ocds-5wno2w-REAJ-AAG-001-2021-27611",
+      "buyer": {
+        "id": "EC-RUC-0992179619001-27611",
+        "name": "AUTORIDAD AEROPORTUARIA DE GUAYAQUIL FUNDACION DE LA M.I MUNICIPALIDAD DE GUAYAQUIL"
+      },
+      "awards": [
+        {
+          "id": "4686440-REAJ-AAG-001-2021",
+          "date": "2021-03-23T09:17:26-05:00",
+          "items": [
+            {
+              "id": "3198168-DS-SO",
+              "unit": {
+                "id": "436",
+                "name": "Unidad",
+                "value": {
+                  "amount": 14000,
+                  "currency": "USD"
+                },
+                "scheme": "SERCOP"
+              },
+              "quantity": 1,
+              "description": "SERVICIOS DE ASESORAMIENTO Y REPRESENTACION JURIDICOS EN PROCEDIMIENTOS JUDICIALES RELATIVOS A OTRAS ESFERAS DEL DERECHO COMO LABOR JURIDICA EXTRAJUDICIAL",
+              "classification": {
+                "id": "821190311",
+                "scheme": "CPC",
+                "description": "SERVICIOS DE ASESORAMIENTO Y REPRESENTACION JURIDICOS EN PROCEDIMIENTOS JUDICIALES RELATIVOS A OTRAS ESFERAS DEL DERECHO COMO LABOR JURIDICA EXTRAJUDICIAL"
+              },
+              "additionalClassifications": [
+                {
+                  "id": "82119.03.1",
+                  "uri": "https:\/\/www.compraspublicas.gob.ec\/ProcesoContratacion\/compras\/exe\/verComProductos_exe.php?tipo=buscar&idProducto=82119.03.1",
+                  "scheme": "CPC",
+                  "description": "SERVICIOS DE ASESORAMIENTO Y REPRESENTACION JURIDICOS EN PROCEDIMIENTOS JUDICIALES RELATIVOS A OTRAS ESFERAS DEL DERECHO COMO LABOR JURIDICA EXTRAJUDICIAL"
+                }
+              ]
+            }
+          ],
+          "value": {
+            "amount": 14000,
+            "currency": "USD"
+          },
+          "suppliers": [
+            {
+              "id": "EC-RUC-0993276553001-1033937",
+              "name": "CORPINTEGRAL S.A.S"
+            }
+          ],
+          "description": "Seg\u00fan Resoluci\u00f3n N 046-AAG-2021",
+          "contractPeriod": {
+            "endDate": "2021-04-24T00:00:00-05:00",
+            "startDate": "2021-03-25T00:00:00-05:00",
+            "durationInDays": 30
+          }
+        }
+      ],
+      "tender": {
+        "id": "REAJ-AAG-001-2021-27611",
+        "items": [
+          {
+            "id": "3198168-DS-SO",
+            "unit": {
+              "id": "436",
+              "name": "Unidad",
+              "value": {
+                "amount": 14000,
+                "currency": "USD"
+              },
+              "scheme": "SERCOP"
+            },
+            "quantity": 1,
+            "description": "SERVICIOS DE ASESORAMIENTO Y REPRESENTACION JURIDICOS EN PROCEDIMIENTOS JUDICIALES RELATIVOS A OTRAS ESFERAS DEL DERECHO COMO LABOR JURIDICA EXTRAJUDICIAL",
+            "classification": {
+              "id": "821190311",
+              "scheme": "CPC",
+              "description": "SERVICIOS DE ASESORAMIENTO Y REPRESENTACION JURIDICOS EN PROCEDIMIENTOS JUDICIALES RELATIVOS A OTRAS ESFERAS DEL DERECHO COMO LABOR JURIDICA EXTRAJUDICIAL"
+            },
+            "additionalClassifications": [
+              {
+                "id": "82119.03.1",
+                "uri": "https:\/\/www.compraspublicas.gob.ec\/ProcesoContratacion\/compras\/exe\/verComProductos_exe.php?tipo=buscar&idProducto=82119.03.1",
+                "scheme": "CPC",
+                "description": "SERVICIOS DE ASESORAMIENTO Y REPRESENTACION JURIDICOS EN PROCEDIMIENTOS JUDICIALES RELATIVOS A OTRAS ESFERAS DEL DERECHO COMO LABOR JURIDICA EXTRAJUDICIAL"
+              }
+            ]
+          }
+        ],
+        "title": "REAJ-AAG-001-2021-27611",
+        "value": {
+          "amount": 14000,
+          "currency": "USD"
+        },
+        "status": "complete",
+        "tenderers": [
+          {
+            "id": "EC-RUC-0993276553001-1033937",
+            "name": "CORPINTEGRAL S.A.S"
+          }
+        ],
+        "awardPeriod": {
+          "endDate": "2021-03-22T11:00:00-05:00",
+          "maxExtentDate": "2021-03-22T11:00:00-05:00"
+        },
+        "description": "AN\u00c1LISIS JUR\u00cdDICO DE LA APLICACI\u00d3N DEL MARCO NORMATIVO LABORAL",
+        "tenderPeriod": {
+          "endDate": "2021-03-19T14:00:00-05:00",
+          "startDate": "2021-03-15T16:00:00-05:00",
+          "maxExtentDate": "2021-03-19T14:00:00-05:00",
+          "durationInDays": 3
+        },
+        "awardCriteria": "ratedCriteria",
+        "enquiryPeriod": {
+          "startDate": "2021-03-15T16:00:00-05:00"
+        },
+        "procuringEntity": {
+          "id": "EC-RUC-0992179619001-27611",
+          "name": "AUTORIDAD AEROPORTUARIA DE GUAYAQUIL FUNDACION DE LA M.I MUNICIPALIDAD DE GUAYAQUIL"
+        },
+        "numberOfTenderers": 1,
+        "procurementMethod": "direct",
+        "eligibilityCriteria": "Experiencia General,Experiencia Espec\u00edfica,Experiencia Personal T\u00e9cnico",
+        "mainProcurementCategory": "services",
+        "procurementMethodDetails": "Asesor\u00eda y Patrocinio Jur\u00eddico"
+      },
+      "parties": [
+        {
+          "id": "EC-RUC-0992179619001-27611",
+          "name": "AUTORIDAD AEROPORTUARIA DE GUAYAQUIL FUNDACION DE LA M.I MUNICIPALIDAD DE GUAYAQUIL",
+          "roles": [
+            "buyer",
+            "procuringEntity"
+          ],
+          "address": {
+            "region": "GUAYAS",
+            "locality": "GUAYAQUIL",
+            "countryName": "ECUADOR",
+            "streetAddress": "Av de las Americas   TARQUI"
+          },
+          "identifier": {
+            "id": "EC-RUC-0992179619001-27611",
+            "scheme": "EC-RUC",
+            "legalName": "AUTORIDAD AEROPORTUARIA DE GUAYAQUIL FUNDACION DE LA M.I MUNICIPALIDAD DE GUAYAQUIL"
+          },
+          "contactPoint": {
+            "url": "http:\/\/www.aag.org.ec",
+            "name": "AUTORIDAD AEROPORTUARIA DE GUAYAQUIL FUNDACION DE LA M.I MUNICIPALIDAD DE GUAYAQUIL"
+          }
+        },
+        {
+          "id": "EC-RUC-0993276553001-1033937",
+          "name": "CORPINTEGRAL S.A.S",
+          "roles": [
+            "supplier",
+            "tenderer"
+          ],
+          "address": {
+            "region": "GUAYAS",
+            "locality": "GUAYAQUIL",
+            "postalCode": "090100",
+            "countryName": "ECUADOR",
+            "streetAddress": "AV. DEL BOMBERO SN 310 TARQUI"
+          },
+          "identifier": {
+            "id": "EC-RUC-0993276553001-1033937",
+            "scheme": "EC-RUC",
+            "legalName": "CORPINTEGRAL S.A.S"
+          },
+          "contactPoint": {
+            "name": "CORPINTEGRAL S.A.S"
+          }
+        }
+      ],
+      "language": "es",
+      "planning": {
+        "budget": {
+          "id": "550575",
+          "amount": {
+            "amount": 14000,
+            "currency": "USD"
+          }
+        },
+        "rationale": "AN\u00c1LISIS JUR\u00cdDICO DE LA APLICACI\u00d3N DEL MARCO NORMATIVO LABORAL"
+      },
+      "contracts": [
+        {
+          "id": "2065563-REAJ-AAG-001-2021",
+          "value": {
+            "amount": 14000,
+            "currency": "USD"
+          },
+          "period": {
+            "endDate": "2021-04-24T00:00:00-05:00",
+            "startDate": "2021-03-25T00:00:00-05:00",
+            "durationInDays": 30
+          },
+          "status": "terminated",
+          "awardID": "4686440-REAJ-AAG-001-2021",
+          "dateSigned": "2021-03-25T00:00:00-05:00"
+        }
+      ],
+      "initiationType": "tender"
+    }
+  ],
+  "publisher": {
+    "uid": "ocds-5wno2w",
+    "uri": "https:\/\/www.compraspublicas.gob.ec",
+    "name": "Servicio Nacional de Contrataci\u00f3n P\u00fablica (SERCOP)",
+    "scheme": "OCDS"
+  },
+  "extensions": [
+    "https:\/\/raw.githubusercontent.com\/open-contracting-extensions\/ocds_enquiry_extension\/master\/extension.json",
+    "https:\/\/raw.githubusercontent.com\/open-contracting-extensions\/ocds_lots_extension\/master\/extension.json",
+    "https:\/\/raw.githubusercontent.com\/open-contracting-extensions\/ocds_techniques_extension\/master\/extension.json",
+    "https:\/\/raw.githubusercontent.com\/GobiernoFacil\/ocds_sercopEnteredValue_extension\/master\/extension.json",
+    "https:\/\/gitlab.com\/dncp-opendata\/ocds_auctions_extension\/raw\/master\/extension.json",
+    "https:\/\/raw.githubusercontent.com\/open-contracting-extensions\/ocds_valueBreakdown_extension\/main\/extension.json",
+    "https:\/\/raw.githubusercontent.com\/open-contracting-extensions\/ocds_competitive_extension\/master\/extension.json",
+    "https:\/\/raw.githubusercontent.com\/open-contracting-extensions\/ocds_bid_extension\/master\/extension.json"
+  ],
+  "publishedDate": "2021-09-19T17:52:40-05:00",
+  "publicationPolicy": "https:\/\/datosabiertos.compraspublicas.gob.ec\/PLATAFORMA\/documentos\/politica-publicacion-SERCOP-OCDS.pdf"
+}

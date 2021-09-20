@@ -5,9 +5,23 @@ const ocdsINAI   = require("./ocds/inai-record-package_1.json");
 const ocdsSHCP   = require("./ocds/shcp-record-package_1.json");
 const ocdsSIAFI2 = require("./ocds/ocds-lcuori-P2020-60-1-5136_honduras.json");
 const ocdsMSPBS  = require("./ocds/ocds-03ad3f-202300-1_paraguay.json");
+const ocdsECU1   = require("./ocds/ecuador-release-package.json");
 
 //const helper = readOCDS.createOCDSHelper({ocid : 12});
 // I'm using beefy index.js:build.js  --live
+// test secop release 
+const helperSERCOP = readOCDS(ocdsECU1)
+console.log("sercop:", helperSERCOP, helperSERCOP.ocds);
+  console.log("sercop planning amount:", helperSERCOP.getStateAmount(helperSERCOP.constants.states.PLANNING) )
+  console.log("sercop tender amount:", helperSERCOP.getStateAmount(helperSERCOP.constants.states.TENDER) )
+  console.log("sercop award amount:", helperSERCOP.getStateAmount(helperSERCOP.constants.states.AWARD) )
+  console.log("sercop contract amount:", helperSERCOP.getStateAmount(helperSERCOP.constants.states.CONTRACT) )
+  console.log("sercop implementation amount:", helperSERCOP.getStateAmount(helperSERCOP.constants.states.IMPLEMENTATION) )
+  console.log("sercop contract has supplier:", helperSERCOP.indices.hasSupplier() )
+  console.log("sercop contract has items:", helperSERCOP.indices.hasItems() )
+  console.log("sercop contract was competitive:", helperSERCOP.indices.isCompetitive() )
+  console.log("sercop contract / award difference:", helperSERCOP.indices.awardContractDiff() )
+  console.log("sercop tender days:", helperSERCOP.indices.tenderPeriodDays() )
 
 // test secop release 1
   const helperSECOP = readOCDS(ocdsSECOP)
