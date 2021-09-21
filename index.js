@@ -63,6 +63,14 @@ const createOCDSHelper = ocds => {
         CONTRACT,
         IMPLEMENTATION,
         FAIL 
+      },
+      types : {
+        RELEASE,
+        RELEASEP,
+        RECORD,
+        RECORDP,
+        LINKED_RELEASE,
+        EMBEDDED_RELEASE
       }
     },
     indices : {

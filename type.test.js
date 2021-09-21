@@ -14,22 +14,22 @@ const ocdsFAIL   = {}
 // TEST the ocds type function
 test('check the ocds type from SECOP (Colombia)', () => {
   const helper = readOCDS(ocdsSECOP)
-  expect( helper.type ).toBe('release')
+  expect( helper.type ).toBe(helper.constants.types.RELEASE)
 })
 
 test('check the ocds type from INAI (Mexico)', () => {
   const helper = readOCDS(ocdsINAI)
-  expect( helper.type ).toBe('record Package')
+  expect( helper.type ).toBe(helper.constants.types.RECORDP)
 })
 
 test('check the ocds type from ocdsSIAFI2 (Honduras)', () => {
   const helper = readOCDS(ocdsSIAFI2)
-  expect( helper.type ).toBe('record')
+  expect( helper.type ).toBe(helper.constants.types.RECORD)
 })
 
 test('check the ocds type from MSPBS (Paraguay)', () => {
   const helper = readOCDS(MSPBS)
-  expect( helper.type ).toBe('record')
+  expect( helper.type ).toBe(helper.constants.types.RECORD)
 })
 
 test('check the ocds type from invalid format (must be null)', () => {
@@ -39,5 +39,5 @@ test('check the ocds type from invalid format (must be null)', () => {
 
 test('check the ocds type from SERCOP (Ecuador)', () => {
   const helper = readOCDS(SERCOP)
-  expect( helper.type ).toBe('release package')
+  expect( helper.type ).toBe(helper.constants.types.RELEASEP)
 })
