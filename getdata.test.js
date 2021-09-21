@@ -7,6 +7,7 @@ const ocdsINAI   = require("./test/ocds/inai-record-package_1.json");
 const ocdsSIAFI2 = require("./test/ocds/ocds-lcuori-P2020-60-1-5136_honduras.json");
 const MSPBS      = require("./test/ocds/ocds-03ad3f-202300-1_paraguay.json");
 const SERCOP     = require("./test/ocds/ecuador-release-package.json");
+const SERCOP2    = require("./test/ocds/ecuador-record-package-1.json");
 
 
 // TEST the getData functionality
@@ -38,4 +39,10 @@ test('access ocid from SERCOP (Ecuador) release package with getData', () => {
 test('access ocid from SERCOP (Ecuador) release package with getData and get tender id', () => {
   const helper = readOCDS(SERCOP)
   expect( helper.getData("tender.id") ).toBe('REAJ-AAG-001-2021-27611')
+})
+
+test('access ocid from SERCOP (Ecuador) record package with getData and get ocid and tender.id', () => {
+  const helper = readOCDS(SERCOP2)
+  expect( helper.getData("ocid") ).toBe('ocds-5wno2w-LICB-CNTEP-115577-20-236009')
+  expect( helper.getData("tender.id") ).toBe('LICB-CNTEP-115577-20-236009')
 })

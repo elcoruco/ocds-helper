@@ -40,9 +40,9 @@ const FAIL = null;
 /
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 */
-const createOCDSHelper = ocds => {
+const createOCDSHelper = (ocds, index = 0) => {
   const type     = jsonType(ocds);
-  const data     = getData(ocds);
+  const data     = getData(ocds, index);
   const state    =  getState(data);
   const daysDiff = getDiffDays(data ? data.date : null);
   const amount   = getAmount(state, data)
@@ -70,7 +70,8 @@ const createOCDSHelper = ocds => {
         RECORD,
         RECORDP,
         LINKED_RELEASE,
-        EMBEDDED_RELEASE
+        EMBEDDED_RELEASE,
+        FAIL
       }
     },
     indices : {
@@ -309,7 +310,9 @@ const getState = rel => {
   return state;
 }
 
-// https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
+/**
+ * ref: https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
+ */
 const getDiffDays = date => {
   if(!date) return null;
   const _MS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -322,36 +325,39 @@ const getDiffDays = date => {
   return dateDiffInDays(new Date(date), new Date());
 }
 
-const getData = ocds => {
+const getData = (ocds, index) => {
   const type = jsonType(ocds);
   if(type === RELEASE) return accesors.release(ocds);
-  else if(type === RECORDP) return  accesors.recordPackage(ocds);
-  else if(type === RELEASEP) return  accesors.releasePackage(ocds);
-  else if(type === RECORD) return  accesors.record(ocds);
-  else return null;
+  else if(type === RECORDP) return  accesors.recordPackage(ocds, index);
+  else if(type === RELEASEP) return accesors.releasePackage(ocds, index);
+  else if(type === RECORD) return   accesors.record(ocds);
+  else return FAIL;
 }
 
 const accesors = {
   release        : rel => rel,
-  record         : record => record.compiledRelease || record.releases[0],
+  record         : record => record.compiledRelease || mergeReleases(record.releases),
   releasePackage : (rp, index) => {
     const releases = rp.releases;
-    return index ? (releases[index] || null) : (releases.length === 1 ? releases[0] : releases); 
+    return releases[index] || FAIL;//index ? (releases[index] || null) : (releases.length === 1 ? releases[0] : releases); 
   },
 
   recordPackage  :  (rp, index) => {
     const records  = rp.records;
     const response = [];
     // check if has items
-    if(!records.length) return null;
+    if(!records.length) return FAIL;
 
     for(const rel of records){
       if(rel.compiledRelease){
         response.push(rel.compiledRelease);
       }
+      else{
+        response.push( mergeReleases(rel.releases) );
+      }
     }
 
-    return index ? (response[index] || null) : (response.length === 1 ? response[0] : response); 
+    return response[index]//index ? (response[index] || null) : (response.length === 1 ? response[0] : response); 
       /*
       else if(rel.releases){
         for(const el of rel.releases){
@@ -374,6 +380,40 @@ const accesors = {
      
     }  */ 
   }
+}
+
+const mergeReleases = releases => {
+  return releases[0];
+}
+
+/**
+ * Simple object check.
+ * src: https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge
+ */
+function isObject(item) {
+  return (item && typeof item === 'object' && !Array.isArray(item));
+}
+
+/**
+ * Deep merge two objects.
+ * src: https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge
+ */
+function mergeDeep(target, ...sources) {
+  if (!sources.length) return target;
+  const source = sources.shift();
+
+  if (isObject(target) && isObject(source)) {
+    for (const key in source) {
+      if (isObject(source[key])) {
+        if (!target[key]) Object.assign(target, { [key]: {} });
+        mergeDeep(target[key], source[key]);
+      } else {
+        Object.assign(target, { [key]: source[key] });
+      }
+    }
+  }
+
+  return mergeDeep(target, ...sources);
 }
 
 
