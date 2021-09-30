@@ -11,10 +11,10 @@ const reducer  = (accumulator, currentValue) => accumulator + currentValue;
 // const releaseP = require("./schemas/release-package.json");
 // const recordP  = require("./schemas/record-package.json");
 
-const RELEASE  = "release";
-const RELEASEP = "release package";
-const RECORD   = "record";
-const RECORDP  = "record Package";
+const RELEASE  = "Release";
+const RELEASEP = "Release Package";
+const RECORD   = "Record";
+const RECORDP  = "Record Package";
 const LINKED_RELEASE   = "Linked Release";
 const EMBEDDED_RELEASE = "Embedded Release";
 
