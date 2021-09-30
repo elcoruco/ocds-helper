@@ -13,7 +13,9 @@
     "ocp",
     "open contracting partnership",
     "ocid",
-    "open contracting data standard"
+    "open contracting data standard",
+    "frontend",
+    "ocds red flags"
   ],
   "devDependencies": {
     "jest": "^27.0.4"
